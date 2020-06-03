@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/Torch.gd" type="Script" id=1]
+[ext_resource path="res://scenes/RogueLight.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/torch.png" type="Texture" id=3]
+
+[node name="Torch" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="RogueLight" type="Node" parent="."]
+script = ExtResource( 2 )
