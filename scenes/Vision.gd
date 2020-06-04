@@ -48,14 +48,14 @@ func compute_shaft(view_shaft):
 		if !get_parent().get_parent().in_boundsv(actual_tile):
 			continue
 		add_tile(actual_tile)
-		if has_vision_blocker(Vector2(column_x,i)):
+		if has_obstacle(Vector2(column_x,i)):
 			set_seen_faces(actual_tile)
+		if has_vision_blocker(Vector2(column_x,i)):
 			var obstacle_above = has_vision_blocker(Vector2(column_x,i+1))
 			if i != top_tile_y && !obstacle_above:
 				var new_shaft = ViewShaft.new(column_x+1,Vector2(column_x*2,2*i+1),adjusted_shaft.top_vector)
 				view_shafts.append(new_shaft)
-			var obstacle_right = has_vision_blocker(Vector2(column_x+1,i))
-			# TODO: pray this works
+			var obstacle_right = has_obstacle(Vector2(column_x+1,i))
 			if i == bottom_tile_y:
 				adjusted_shaft.top_vector = adjusted_shaft.bottom_vector #Vector2(2*column_x+1,2*i-1)
 			elif obstacle_right:
@@ -99,9 +99,23 @@ func has_vision_blocker(relative_tile):
 	return false
 
 
+func has_obstacle(relative_tile):
+	var tile = get_parent().get_parent().tilev(get_actual_tile(relative_tile))
+	if tile && tile.obstacle:
+		return true
+	return false
+
+
 func has_vision_blocker_actual(actual_tile):
 	var tile = get_parent().get_parent().tilev(actual_tile)
 	if tile && tile.obstacle && tile.obstacle.blocks_vision:
+		return true
+	return false
+
+
+func has_obstacle_actual(actual_tile):
+	var tile = get_parent().get_parent().tilev(actual_tile)
+	if tile && tile.obstacle:
 		return true
 	return false
 

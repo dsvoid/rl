@@ -1,8 +1,9 @@
 extends Node
 
 
-var blocks_vision = true
-var seen_before = false
+var blocks_vision:bool = true
+var blocks_movement:bool = true
+var seen_before:bool = false
 
 
 #func _ready():

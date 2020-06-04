@@ -1,6 +1,6 @@
 extends Node2D
 
-export (PackedScene) var TileBGSprite
+var TileBGSprite = preload("res://scenes/TileBGSprite.tscn")
 var TILE_WIDTH
 var TILE_HEIGHT
 var observer
@@ -25,9 +25,8 @@ var light_levels_fg = [
 ]
 
 func _ready():
-	observer = get_parent().get_node("Player")
-	TILE_WIDTH = get_node("/root/Global").TILE_WIDTH
-	TILE_HEIGHT = get_node("/root/Global").TILE_HEIGHT
+	TILE_WIDTH = Global.TILE_WIDTH
+	TILE_HEIGHT = Global.TILE_HEIGHT
 	for i in range(get_parent().width):
 		tile_bgs.append([])
 		for j in range(get_parent().height):
@@ -40,13 +39,16 @@ func _ready():
 
 
 func init_vision():
+	observer = get_parent().get_node("Player")
 	for i in range(get_parent().width):
 		for j in range(get_parent().height):
 			var tile = get_parent().tile(i,j)
 			if tile.actor:
-				tile.actor.get_node("ActorSprite").set("visible", false)
+				tile.actor.get_node("Sprite").set("visible", false)
 			if tile.obstacle && !tile.obstacle.seen_before:
-				tile.obstacle.get_node("ObstacleSprite").set("visible", false)
+				tile.obstacle.get_node("Sprite").set("visible", false)
+			if tile.items.size() != 0:
+				tile.items[0].get_node("Sprite").set("visible", false)
 
 
 func apply_vision(old_visible_tiles, new_visible_tiles):
@@ -54,22 +56,27 @@ func apply_vision(old_visible_tiles, new_visible_tiles):
 		var tile = get_parent().tilev(i)
 		tile_bgs[i.x][i.y].modulate = Color("#000000")
 		if tile.actor:
-			tile.actor.get_node("ActorSprite").set("visible", false)
+			tile.actor.get_node("Sprite").set("visible", false)
 		if tile.obstacle:
 			if !tile.obstacle.seen_before:
-				tile.obstacle.get_node("ObstacleSprite").set("visible", false)
-			tile.obstacle.get_node("ObstacleSprite").modulate = Color("#555555")
+				tile.obstacle.get_node("Sprite").set("visible", false)
+			tile.obstacle.get_node("Sprite").modulate = Color("#555555")
+		if tile.items.size() != 0:
+			tile.items[0].get_node("Sprite").set("visible", false)
 	for i in new_visible_tiles:
 		var tile = get_parent().tilev(i)
 		light_tile(tile,i)
 		tile_bgs[i.x][i.y].modulate = Color(light_levels_bg[tile.light_level])
 		if tile.actor:
-			tile.actor.get_node("ActorSprite").set("visible", true)
-			tile.actor.get_node("ActorSprite").modulate = Color(light_levels_fg[tile.light_level])
+			tile.actor.get_node("Sprite").set("visible", true)
+			tile.actor.get_node("Sprite").modulate = Color(light_levels_fg[tile.light_level])
 		if tile.obstacle:
-			tile.obstacle.get_node("ObstacleSprite").set("visible", true)
-			tile.obstacle.get_node("ObstacleSprite").modulate = Color(light_levels_fg[tile.light_level])
+			tile.obstacle.get_node("Sprite").set("visible", true)
+			tile.obstacle.get_node("Sprite").modulate = Color(light_levels_fg[tile.light_level])
 			tile.obstacle.seen_before = true
+		if tile.items.size() != 0:
+			tile.items[0].get_node("Sprite").set("visible", true)
+			tile.items[0].get_node("Sprite").modulate = Color(light_levels_fg[tile.light_level])
 
 
 func apply_light(old_visible_tiles, new_visible_tiles):
