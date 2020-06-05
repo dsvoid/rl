@@ -37,27 +37,34 @@ func compute_shaft(view_shaft):
 	var bottom_vector = view_shaft.bottom_vector
 	var top_vector = view_shaft.top_vector
 	var adjusted_shaft = ViewShaft.new(column_x+1,bottom_vector,top_vector)
+	# all tiles within this range are visible to the view shaft
+	var bottom_visible_y = ceil(column_x*bottom_vector.y/bottom_vector.x)
+	var top_visible_y = floor(column_x*top_vector.y/top_vector.x)
+	# a "stippled" shaft might have no visible tiles for a column,
+	# but will still need to do visibility checks on surfaces it crosses,
+	# so tiles in this range are tested for blocking visibility.
+	var bottom_shaft_y = floor(column_x*bottom_vector.y/bottom_vector.x)
+	var top_shaft_y = ceil(column_x*top_vector.y/top_vector.x)
 	
-	var bottom_tile_y = ceil(column_x*bottom_vector.y/bottom_vector.x)
-	var top_tile_y = floor(column_x*top_vector.y/top_vector.x)
-	top_tile_y = min(top_tile_y,floor(sqrt(radius*radius - column_x*column_x)))
-	
-	for i in range(top_tile_y,bottom_tile_y-1,-1):
+	top_visible_y = min(top_visible_y,floor(sqrt(radius*radius - column_x*column_x)))
+	for i in range(top_shaft_y,bottom_shaft_y-1,-1):
 		var relative_tile = Vector2(column_x,i)
 		var actual_tile = get_actual_tile(relative_tile)
 		if !get_parent().get_parent().in_boundsv(actual_tile):
 			continue
-		add_tile(actual_tile)
-		if has_obstacle(Vector2(column_x,i)):
-			set_seen_faces(actual_tile)
+		var added_tile = false
+		if i <= top_visible_y && i >= bottom_visible_y:
+			add_tile(actual_tile)
+			if has_obstacle(Vector2(column_x,i)):
+				set_seen_faces(actual_tile)
 		if has_vision_blocker(Vector2(column_x,i)):
 			var obstacle_above = has_vision_blocker(Vector2(column_x,i+1))
-			if i != top_tile_y && !obstacle_above:
+			if i != top_visible_y && !obstacle_above:
 				var new_shaft = ViewShaft.new(column_x+1,Vector2(column_x*2,2*i+1),adjusted_shaft.top_vector)
 				view_shafts.append(new_shaft)
 			var obstacle_right = has_obstacle(Vector2(column_x+1,i))
-			if i == bottom_tile_y:
-				adjusted_shaft.top_vector = adjusted_shaft.bottom_vector #Vector2(2*column_x+1,2*i-1)
+			if i == bottom_visible_y:
+				adjusted_shaft.top_vector = adjusted_shaft.bottom_vector
 			elif obstacle_right:
 				adjusted_shaft.top_vector = Vector2(2*column_x+1,2*i)
 			else:
