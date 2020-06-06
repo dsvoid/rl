@@ -2,3 +2,5 @@ extends Node
 
 const TILE_WIDTH = 12
 const TILE_HEIGHT = 12
+const TWEEN_DURATION = 0.0833
+const INPUT_COOLDOWN = 0.1667

@@ -3,6 +3,7 @@ extends Node
 var Obstacle = preload("res://scenes/Obstacle.tscn")
 var Player = preload("res://scenes/Player.tscn")
 var Item = preload("res://scenes/Item.tscn")
+var Ground = preload("res://scenes/Ground.tscn")
 #var Torch = preload("res://scenes/Torch.tscn")
 export var width = 40
 export var height = 30
@@ -40,34 +41,45 @@ func load_level(map_path):
 	var map_width = int(map["width"])
 	var map_tiles = map["layers"][0]["data"] # TODO: layer support, flooring
 	for i in range(map_tiles.size()):
+		var x = i % map_width
+		var y = i / map_width
+		var location = Vector2(x,y)
+		var position = Vector2(x*Global.TILE_WIDTH, y*Global.TILE_HEIGHT)
+		var ground = Ground.instance()
+		tiles[x][y].ground = ground
+		ground.tile = location
+		ground.position = position
+		add_child(ground)
 		if map_tiles[i] != 0:
-			var x = i % map_width
-			var y = i / map_width
 			var index = int(map_tiles[i]-1)
 			var tile = tileset[index]
-			var offset_x = (index % tileset_columns) * Global.TILE_WIDTH
-			var offset_y = (index / tileset_columns) * Global.TILE_HEIGHT
-			var location = Vector2(x,y)
-			var position = Vector2(x*Global.TILE_WIDTH, y*Global.TILE_HEIGHT)
 			var entity
 			if tile.type == "obstacle":
 				entity = Obstacle.instance()
 				tiles[x][y].obstacle = entity
 				entity.blocks_movement = tile.blocks_movement
 				entity.blocks_vision = tile.blocks_vision
+				add_child(entity)
 			if tile.type == "actor":
 				entity = Player.instance()
 				tiles[x][y].actor = entity
+				add_child(entity)
 			if tile.type == "item":
 				entity = Item.instance()
-				tiles[x][y].items.append(entity)
-				entity.emits_light = tile.emits_light
-				if entity.emits_light:
-					entity.set_light()
-					lights[location] = entity
+				# let ground handle representation of item
+				entity.get_node("Sprite").visible = false
+				tiles[x][y].ground.add_item(entity)
+				add_child(entity)
+			if tile.type == "ground":
+				entity = ground
+			entity.emits_light = tile.emits_light
 			entity.tile = location
 			entity.position = position
-			add_child(entity)
+			if entity.emits_light:
+				entity.set_light()
+				lights[location] = entity
+			var offset_x = (index % tileset_columns) * Global.TILE_WIDTH
+			var offset_y = (index / tileset_columns) * Global.TILE_HEIGHT
 			entity.get_node("Sprite").region_rect = Rect2(
 				offset_x,
 				offset_y,
@@ -119,5 +131,4 @@ class Tile:
 	var light_level = 0
 	var obstacle = false
 	var actor = false
-	var items = []
-	var render_item = 0
+	var ground = false

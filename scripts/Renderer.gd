@@ -45,25 +45,22 @@ func init_vision():
 	for i in range(get_parent().width):
 		for j in range(get_parent().height):
 			var tile = get_parent().tile(i,j)
+			tile.ground.render_sprite.modulate = black
 			if tile.actor:
 				tile.actor.get_node("Sprite").modulate = black
 			if tile.obstacle && !tile.obstacle.seen_before:
 				tile.obstacle.get_node("Sprite").modulate = black
-			if tile.items.size() != 0:
-				tile.items[0].get_node("Sprite").modulate = black
 
 
 func apply_vision(old_visible_tiles, new_visible_tiles):
-	print(observer.tile)
 	for i in old_visible_tiles:
 		var tile = get_parent().tilev(i)
 		apply_tile_bg_tween(tile_bgs[i.x][i.y], black)
+		tile.ground.apply_color_tween(black)
 		if tile.actor:
 			tile.actor.apply_color_tween(black)
 		if tile.obstacle:
 			tile.obstacle.apply_color_tween(grey)
-		if tile.items.size() != 0:
-			tile.items[0].apply_color_tween(black)
 	for i in new_visible_tiles:
 		var tile = get_parent().tilev(i)
 		light_tile(tile,i)
@@ -71,13 +68,13 @@ func apply_vision(old_visible_tiles, new_visible_tiles):
 		var fg_color = light_levels_fg[tile.light_level]
 		if tile_bgs[i.x][i.y].modulate != bg_color:
 			apply_tile_bg_tween(tile_bgs[i.x][i.y],bg_color)
+		if tile.ground.render_sprite.modulate != fg_color:
+			tile.ground.apply_color_tween(fg_color)
 		if tile.actor && tile.actor.get_node("Sprite").modulate != fg_color:
 			tile.actor.apply_color_tween(fg_color)
 		if tile.obstacle && tile.obstacle.get_node("Sprite").modulate != fg_color:
 			tile.obstacle.apply_color_tween(fg_color)
 			tile.obstacle.seen_before = true
-		if tile.items.size() != 0 && tile.items[0].get_node("Sprite").modulate != fg_color:
-			tile.items[0].apply_color_tween(fg_color)
 
 
 func apply_light(old_visible_tiles, new_visible_tiles):
@@ -114,4 +111,3 @@ func apply_tile_bg_tween(sprite,target):
 		sprite, "modulate", sprite.modulate, target, 0.0833, Tween.TRANS_LINEAR
 	)
 	$TileBGTween.start()
-

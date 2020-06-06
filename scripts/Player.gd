@@ -1,13 +1,12 @@
 extends Actor
 class_name Player
 
-var input_cooldown = 0.1667
-var current_input_time = input_cooldown
+var current_input_time = Global.INPUT_COOLDOWN
 
 
 func _process(delta):
 	# do not process certain inputs until some time has passed
-	if current_input_time < input_cooldown:
+	if current_input_time < Global.INPUT_COOLDOWN:
 		current_input_time += delta
 		return
 	# do not process certain inputs if still moving
@@ -31,8 +30,16 @@ func _process(delta):
 	if direction.x != 0 || direction.y != 0:
 		# check for any collisions before moving
 		var target = Vector2(tile.x+direction.x, tile.y+direction.y)
-		var target_tile = get_parent().tilev(target)
-		if !movement_collision(target_tile):
+		var new_tile = get_parent().tilev(target)
+		if !movement_collision(new_tile):
+			var old_tile = get_parent().tilev(tile)
+			# apply an alpha tween on sprites the player moves between
+			old_tile.ground.fade(1)
+			new_tile.ground.fade(0)
+			if old_tile.obstacle:
+				old_tile.obstacle.fade(1)
+			if new_tile.obstacle:
+				new_tile.obstacle.fade(0)
 			# change tile position
 			get_parent().tilev(tile).actor = false
 			tile.x = target.x

@@ -434,7 +434,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"floor"
+                 "value":"ground"
                 }]
         }, 
         {
@@ -498,7 +498,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"floor"
+                 "value":"ground"
                 }]
         }, 
         {

@@ -3,7 +3,7 @@ class_name RogueLight
 
 var strength
 
-func _init(r=6,s=6):
+func _init(r=7,s=6):
 	strength = s
 	radius = r
 
