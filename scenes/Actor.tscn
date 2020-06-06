@@ -1,24 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/12x12_test.png" type="Texture" id=1]
-[ext_resource path="res://scenes/Actor.gd" type="Script" id=2]
-[ext_resource path="res://scenes/ActorTween.gd" type="Script" id=3]
-[ext_resource path="res://scenes/Vision.gd" type="Script" id=4]
+[ext_resource path="res://scenes/Entity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/Actor.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Vision.gd" type="Script" id=4]
 
-[node name="Actor" type="Node2D"]
+[node name="Actor" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-centered = false
-region_enabled = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="ActorTween" type="Tween" parent="."]
-script = ExtResource( 3 )
-
-[node name="Vision" type="Node" parent="."]
+[node name="Vision" type="Node" parent="." index="3"]
 script = ExtResource( 4 )
-[connection signal="tween_completed" from="ActorTween" to="." method="_on_ActorTween_completed"]

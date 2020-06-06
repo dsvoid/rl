@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/Entity.gd" type="Script" id=1]
+[ext_resource path="res://assets/12x12_test.png" type="Texture" id=2]
+
+[node name="Entity" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorTween" type="Tween" parent="."]
+
+[node name="MotionTween" type="Tween" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true

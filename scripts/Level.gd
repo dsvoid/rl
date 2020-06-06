@@ -58,18 +58,22 @@ func load_level(map_path):
 			if tile.type == "actor":
 				entity = Player.instance()
 				tiles[x][y].actor = entity
-				entity.tile = location
 			if tile.type == "item":
 				entity = Item.instance()
 				tiles[x][y].items.append(entity)
-				entity.tile = location
 				entity.emits_light = tile.emits_light
 				if entity.emits_light:
 					entity.set_light()
 					lights[location] = entity
-			add_child(entity)
+			entity.tile = location
 			entity.position = position
-			entity.get_node("Sprite").region_rect = Rect2(offset_x, offset_y, Global.TILE_WIDTH, Global.TILE_HEIGHT)
+			add_child(entity)
+			entity.get_node("Sprite").region_rect = Rect2(
+				offset_x,
+				offset_y,
+				Global.TILE_WIDTH,
+				Global.TILE_HEIGHT
+			)
 
 
 func load_tileset(tileset_path):

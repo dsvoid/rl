@@ -9,28 +9,46 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node2D",
+"base": "Entity",
 "class": "Actor",
 "language": "GDScript",
-"path": "res://scenes/Actor.gd"
+"path": "res://scripts/Actor.gd"
+}, {
+"base": "Node2D",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://scripts/Entity.gd"
+}, {
+"base": "Entity",
+"class": "Item",
+"language": "GDScript",
+"path": "res://scripts/Item.gd"
+}, {
+"base": "Entity",
+"class": "Obstacle",
+"language": "GDScript",
+"path": "res://scripts/Obstacle.gd"
 }, {
 "base": "Actor",
 "class": "Player",
 "language": "GDScript",
-"path": "res://scenes/Player.gd"
+"path": "res://scripts/Player.gd"
 }, {
 "base": "",
 "class": "RogueLight",
 "language": "GDScript",
-"path": "res://scenes/RogueLight.gd"
+"path": "res://scripts/RogueLight.gd"
 }, {
 "base": "Node",
 "class": "Vision",
 "language": "GDScript",
-"path": "res://scenes/Vision.gd"
+"path": "res://scripts/Vision.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
+"Entity": "",
+"Item": "",
+"Obstacle": "",
 "Player": "",
 "RogueLight": "",
 "Vision": ""
@@ -44,7 +62,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://scenes/Global.gd"
+Global="*res://scripts/Global.gd"
 
 [display]
 

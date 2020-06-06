@@ -1,10 +1,8 @@
 extends Actor
 class_name Player
 
-
-export var input_cooldown = 0.1667
+var input_cooldown = 0.1667
 var current_input_time = input_cooldown
-var tween
 
 
 func _process(delta):
@@ -13,7 +11,7 @@ func _process(delta):
 		current_input_time += delta
 		return
 	# do not process certain inputs if still moving
-	if is_moving:
+	if in_motion_tween:
 		return
 	
 	var direction = Vector2()
@@ -40,14 +38,17 @@ func _process(delta):
 			tile.x = target.x
 			tile.y = target.y
 			get_parent().tilev(tile).actor = self
+			# recompute FOV from new position
 			$Vision.compute_fov()
-			get_parent().get_node("VisionRenderer").apply_vision($Vision.old_visible_tiles, $Vision.visible_tiles)
+			get_parent().get_node("VisionRenderer").apply_vision(
+				$Vision.old_visible_tiles,
+				$Vision.visible_tiles
+			)
 			# modify position on screen
-			is_moving = true
 			var target_position = Vector2()
 			target_position.x = position.x + Global.TILE_WIDTH * direction.x
 			target_position.y = position.y + Global.TILE_HEIGHT * direction.y
-			$ActorTween.move_actor(self, target_position)
+			apply_motion_tween(target_position)
 		current_input_time = 0
 
 

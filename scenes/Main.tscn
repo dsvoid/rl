@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scenes/VisionRenderer.gd" type="Script" id=3]
-[ext_resource path="res://scenes/Level.gd" type="Script" id=4]
+[ext_resource path="res://scripts/VisionRenderer.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Level.gd" type="Script" id=4]
 
 [node name="Main" type="Node2D"]
 __meta__ = {
@@ -13,3 +13,5 @@ script = ExtResource( 4 )
 
 [node name="VisionRenderer" type="Node2D" parent="Level"]
 script = ExtResource( 3 )
+
+[node name="TileBGTween" type="Tween" parent="Level/VisionRenderer"]

@@ -21,6 +21,7 @@ func compute_fov():
 	view_shafts.clear() # necessary?
 	source = get_parent().tile
 	add_tile(source)
+	old_visible_tiles.erase(source)
 	while current_octant < 8:
 		var initial_view_shaft = ViewShaft.new(1,Vector2(1,0),Vector2(1,1))
 		view_shafts.append(initial_view_shaft)
@@ -40,21 +41,20 @@ func compute_shaft(view_shaft):
 	# all tiles within this range are visible to the view shaft
 	var bottom_visible_y = ceil(column_x*bottom_vector.y/bottom_vector.x)
 	var top_visible_y = floor(column_x*top_vector.y/top_vector.x)
+	top_visible_y = min(top_visible_y,floor(sqrt(radius*radius - column_x*column_x)))
 	# a "stippled" shaft might have no visible tiles for a column,
 	# but will still need to do visibility checks on surfaces it crosses,
 	# so tiles in this range are tested for blocking visibility.
 	var bottom_shaft_y = floor(column_x*bottom_vector.y/bottom_vector.x)
 	var top_shaft_y = ceil(column_x*top_vector.y/top_vector.x)
-	
-	top_visible_y = min(top_visible_y,floor(sqrt(radius*radius - column_x*column_x)))
 	for i in range(top_shaft_y,bottom_shaft_y-1,-1):
 		var relative_tile = Vector2(column_x,i)
 		var actual_tile = get_actual_tile(relative_tile)
 		if !get_parent().get_parent().in_boundsv(actual_tile):
 			continue
-		var added_tile = false
 		if i <= top_visible_y && i >= bottom_visible_y:
 			add_tile(actual_tile)
+			old_visible_tiles.erase(actual_tile)
 			if has_obstacle(Vector2(column_x,i)):
 				set_seen_faces(actual_tile)
 		if has_vision_blocker(Vector2(column_x,i)):
