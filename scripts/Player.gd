@@ -40,7 +40,7 @@ func _process(delta):
 			get_parent().tilev(tile).actor = self
 			# recompute FOV from new position
 			$Vision.compute_fov()
-			get_parent().get_node("VisionRenderer").apply_vision(
+			get_parent().get_node("Renderer").apply_vision(
 				$Vision.old_visible_tiles,
 				$Vision.visible_tiles
 			)

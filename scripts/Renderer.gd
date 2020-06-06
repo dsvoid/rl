@@ -54,6 +54,7 @@ func init_vision():
 
 
 func apply_vision(old_visible_tiles, new_visible_tiles):
+	print(observer.tile)
 	for i in old_visible_tiles:
 		var tile = get_parent().tilev(i)
 		apply_tile_bg_tween(tile_bgs[i.x][i.y], black)
@@ -65,9 +66,9 @@ func apply_vision(old_visible_tiles, new_visible_tiles):
 			tile.items[0].apply_color_tween(black)
 	for i in new_visible_tiles:
 		var tile = get_parent().tilev(i)
+		light_tile(tile,i)
 		var bg_color = light_levels_bg[tile.light_level]
 		var fg_color = light_levels_fg[tile.light_level]
-		light_tile(tile,i)
 		if tile_bgs[i.x][i.y].modulate != bg_color:
 			apply_tile_bg_tween(tile_bgs[i.x][i.y],bg_color)
 		if tile.actor && tile.actor.get_node("Sprite").modulate != fg_color:

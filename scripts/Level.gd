@@ -26,10 +26,10 @@ func _ready():
 	for emitter in lights.values():
 		var light = emitter.get_node("RogueLight")
 		light.compute_fov()
-		$VisionRenderer.apply_light(light.old_visible_tiles, light.visible_tiles)
-	$VisionRenderer.init_vision()
+		$Renderer.apply_light(light.old_visible_tiles, light.visible_tiles)
+	$Renderer.init_vision()
 	$Player/Vision.compute_fov()
-	$VisionRenderer.apply_vision($Player/Vision.old_visible_tiles, $Player/Vision.visible_tiles)
+	$Renderer.apply_vision($Player/Vision.old_visible_tiles, $Player/Vision.visible_tiles)
 
 
 func load_level(map_path):

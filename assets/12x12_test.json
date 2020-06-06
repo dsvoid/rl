@@ -1,4 +1,12 @@
 { "columns":5,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"",
+         "target":"."
+        }
+    },
  "image":"12x12_test.png",
  "imageheight":64,
  "imagewidth":64,
