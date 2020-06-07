@@ -47,10 +47,11 @@ func _process(delta):
 			get_parent().tilev(tile).actor = self
 			# recompute FOV from new position
 			$Vision.compute_fov()
-			get_parent().get_node("Renderer").apply_vision(
-				$Vision.old_visible_tiles,
-				$Vision.visible_tiles
-			)
+			get_node("RogueLight").compute_fov()
+			get_parent().get_node("Renderer").apply_light(get_node("RogueLight"))
+			print("=== AFTER APPLY LIGHT")
+			print(get_parent().tilev(Vector2(20,12)).lights)
+			get_parent().get_node("Renderer").apply_vision($Vision)
 			# modify position on screen
 			var target_position = Vector2()
 			target_position.x = position.x + Global.TILE_WIDTH * direction.x

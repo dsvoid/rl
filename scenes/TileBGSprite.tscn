@@ -3,5 +3,6 @@
 [ext_resource path="res://assets/background.png" type="Texture" id=1]
 
 [node name="TileBGSprite" type="Sprite"]
+z_index = -1
 texture = ExtResource( 1 )
 centered = false

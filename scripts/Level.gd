@@ -4,21 +4,13 @@ var Obstacle = preload("res://scenes/Obstacle.tscn")
 var Player = preload("res://scenes/Player.tscn")
 var Item = preload("res://scenes/Item.tscn")
 var Ground = preload("res://scenes/Ground.tscn")
-#var Torch = preload("res://scenes/Torch.tscn")
-export var width = 40
-export var height = 30
+var p # stores player node
+var width
+var height
 var tiles = []
 var tileset = []
 var tileset_columns
 var lights = {}
-
-
-func _init():
-	for i in range(width):
-		tiles.append([])
-		for j in range(height):
-			tiles[i].append(Tile.new())
-
 
 func _ready():
 	load_tileset("res://assets/12x12_test.json")
@@ -27,10 +19,10 @@ func _ready():
 	for emitter in lights.values():
 		var light = emitter.get_node("RogueLight")
 		light.compute_fov()
-		$Renderer.apply_light(light.old_visible_tiles, light.visible_tiles)
+		$Renderer.apply_light(light)
 	$Renderer.init_vision()
 	$Player/Vision.compute_fov()
-	$Renderer.apply_vision($Player/Vision.old_visible_tiles, $Player/Vision.visible_tiles)
+	$Renderer.apply_vision($Player/Vision)
 
 
 func load_level(map_path):
@@ -38,11 +30,16 @@ func load_level(map_path):
 	f.open("%s" % map_path, f.READ)
 	var map = JSON.parse(f.get_as_text()).result
 	f.close()
-	var map_width = int(map["width"])
+	width = int(map["width"])
+	height = int(map["height"])
+	for i in range(width):
+		tiles.append([])
+		for j in range(height):
+			tiles[i].append(Tile.new())
 	var map_tiles = map["layers"][0]["data"] # TODO: layer support, flooring
 	for i in range(map_tiles.size()):
-		var x = i % map_width
-		var y = i / map_width
+		var x = i % width
+		var y = i / width
 		var location = Vector2(x,y)
 		var position = Vector2(x*Global.TILE_WIDTH, y*Global.TILE_HEIGHT)
 		var ground = Ground.instance()
@@ -64,6 +61,7 @@ func load_level(map_path):
 				entity = Player.instance()
 				tiles[x][y].actor = entity
 				add_child(entity)
+				p = entity
 			if tile.type == "item":
 				entity = Item.instance()
 				# let ground handle representation of item
@@ -73,6 +71,8 @@ func load_level(map_path):
 			if tile.type == "ground":
 				entity = ground
 			entity.emits_light = tile.emits_light
+			if tile.type == "actor":
+				entity.emits_light = true
 			entity.tile = location
 			entity.position = position
 			if entity.emits_light:

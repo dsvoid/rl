@@ -7,10 +7,11 @@ var old_visible_tiles
 var view_shafts = []
 var radius
 var current_octant
-var source
+var source = false
+var old_source = false
 
 
-func _init(r=20):
+func _init(r=15):
 	radius = r
 
 
@@ -19,6 +20,8 @@ func compute_fov():
 	current_octant = 0
 	visible_tiles.clear()
 	view_shafts.clear() # necessary?
+	if source:
+		old_source = source
 	source = get_parent().tile
 	add_tile(source)
 	old_visible_tiles.erase(source)
@@ -129,7 +132,8 @@ func has_obstacle_actual(actual_tile):
 
 func add_tile(tile):
 	if !visible_tiles.has(tile):
-		visible_tiles[tile] = [false,false,false,false] # up, down, left, right face
+		#                      up,   down, left, right faces
+		visible_tiles[tile] = [false,false,false,false]
 
 
 func set_seen_faces(tile):

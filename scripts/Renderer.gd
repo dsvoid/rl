@@ -1,8 +1,6 @@
 extends Node2D
 
 var TileBGSprite = preload("res://scenes/TileBGSprite.tscn")
-var TILE_WIDTH
-var TILE_HEIGHT
 var observer
 var tile_bgs = []
 var light_levels_bg = [
@@ -26,21 +24,18 @@ var light_levels_fg = [
 var black = Color("#000000")
 var grey = Color("#555555")
 
-func _ready():
-	TILE_WIDTH = Global.TILE_WIDTH
-	TILE_HEIGHT = Global.TILE_HEIGHT
+
+func init_vision():
 	for i in range(get_parent().width):
 		tile_bgs.append([])
 		for j in range(get_parent().height):
 			var tile_bg = TileBGSprite.instance()
-			tile_bg.position.x = i * TILE_WIDTH
-			tile_bg.position.y = j * TILE_HEIGHT
+			tile_bg.position.x = i * Global.TILE_WIDTH
+			tile_bg.position.y = j * Global.TILE_HEIGHT
 			tile_bg.modulate = black
 			add_child(tile_bg)
 			tile_bgs[i].append(tile_bg)
-
-
-func init_vision():
+	
 	observer = get_parent().get_node("Player")
 	for i in range(get_parent().width):
 		for j in range(get_parent().height):
@@ -52,7 +47,9 @@ func init_vision():
 				tile.obstacle.get_node("Sprite").modulate = black
 
 
-func apply_vision(old_visible_tiles, new_visible_tiles):
+func apply_vision(vision):
+	var old_visible_tiles = vision.old_visible_tiles
+	var new_visible_tiles = vision.visible_tiles
 	for i in old_visible_tiles:
 		var tile = get_parent().tilev(i)
 		apply_tile_bg_tween(tile_bgs[i.x][i.y], black)
@@ -77,17 +74,24 @@ func apply_vision(old_visible_tiles, new_visible_tiles):
 			tile.obstacle.seen_before = true
 
 
-func apply_light(old_visible_tiles, new_visible_tiles):
+func apply_light(light):
+	var old_visible_tiles = light.old_visible_tiles
+	var new_visible_tiles = light.visible_tiles
 	for i in old_visible_tiles:
 		var tile = get_parent().tilev(i)
-		tile.lights.erase(new_visible_tiles[i].source)
+		if (light.old_source):
+			tile.lights.erase(light.old_source)
 	for i in new_visible_tiles:
 		var tile = get_parent().tilev(i)
+		if (light.old_source):
+			tile.lights.erase(light.old_source)
+		if i == Vector2(20,12):
+			print("=== BEFORE APPLY LIGHT")
+			print(tile.lights)
 		tile.lights[new_visible_tiles[i].source] = {
 			"light_level": new_visible_tiles[i].light_level,
 			"faces": new_visible_tiles[i].faces
 		}
-
 
 func light_tile(tile,location):
 	tile.light_level = 0

@@ -254,7 +254,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"obstacle"
+                 "value":"ground"
                 }]
         }, 
         {
@@ -364,7 +364,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"obstacle"
+                 "value":"ground"
                 }]
         }, 
         {
