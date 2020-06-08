@@ -49,7 +49,7 @@ func init_vision():
 
 func apply_vision(vision):
 	var old_visible_tiles = vision.old_visible_tiles
-	var new_visible_tiles = vision.visible_tiles
+	var visible_tiles = vision.visible_tiles
 	for i in old_visible_tiles:
 		var tile = get_parent().tilev(i)
 		apply_tile_bg_tween(tile_bgs[i.x][i.y], black)
@@ -58,7 +58,7 @@ func apply_vision(vision):
 			tile.actor.apply_color_tween(black)
 		if tile.obstacle:
 			tile.obstacle.apply_color_tween(grey)
-	for i in new_visible_tiles:
+	for i in visible_tiles:
 		var tile = get_parent().tilev(i)
 		light_tile(tile,i)
 		var bg_color = light_levels_bg[tile.light_level]
@@ -76,37 +76,34 @@ func apply_vision(vision):
 
 func apply_light(light):
 	var old_visible_tiles = light.old_visible_tiles
-	var new_visible_tiles = light.visible_tiles
+	var visible_tiles = light.visible_tiles
 	for i in old_visible_tiles:
 		var tile = get_parent().tilev(i)
 		if (light.old_source):
-			tile.lights.erase(light.old_source)
-	for i in new_visible_tiles:
+			tile.lit_by.erase(light.old_source)
+	for i in visible_tiles:
 		var tile = get_parent().tilev(i)
 		if (light.old_source):
-			tile.lights.erase(light.old_source)
-		if i == Vector2(20,12):
-			print("=== BEFORE APPLY LIGHT")
-			print(tile.lights)
-		tile.lights[new_visible_tiles[i].source] = {
-			"light_level": new_visible_tiles[i].light_level,
-			"faces": new_visible_tiles[i].faces
+			tile.lit_by.erase(light.old_source)
+		tile.lit_by[light.source] = {
+			"light_level": visible_tiles[i].light_level,
+			"faces": visible_tiles[i].faces
 		}
 
 func light_tile(tile,location):
 	tile.light_level = 0
 	if !tile.obstacle:
-		for i in tile.lights:
-			tile.light_level += tile.lights[i].light_level
+		for i in tile.lit_by:
+			tile.light_level += tile.lit_by[i].light_level
 	else:
-		for i in tile.lights:
+		for i in tile.lit_by:
 			var vision_faces = observer.get_node("Vision").visible_tiles[location]
-			var light_faces = tile.lights[i].faces
+			var light_faces = tile.lit_by[i].faces
 			if ((vision_faces[0] && light_faces[0])
 			 || (vision_faces[1] && light_faces[1])
 			 || (vision_faces[2] && light_faces[2])
 			 || (vision_faces[3] && light_faces[3])):
-				tile.light_level += tile.lights[i].light_level
+				tile.light_level += tile.lit_by[i].light_level
 	tile.light_level = min(tile.light_level,6)
 
 

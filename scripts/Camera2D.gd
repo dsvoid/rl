@@ -8,6 +8,4 @@ func _process(delta):
 			target.position.x+Global.TILE_WIDTH/2,
 			target.position.y+Global.TILE_HEIGHT/2
 		)
-	# makes camera follow its target tightly
-	align() 
-
+	align() # makes camera follow its target tightly

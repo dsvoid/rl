@@ -21,7 +21,7 @@
          "id":0,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -39,15 +39,20 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":1,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"blocks_vision",
@@ -63,13 +68,18 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":2,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -87,13 +97,18 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":3,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -111,13 +126,18 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":4,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -135,13 +155,18 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":5,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -159,13 +184,18 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":6,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -183,15 +213,20 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":7,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"blocks_vision",
@@ -207,15 +242,20 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":8,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"blocks_vision",
@@ -231,21 +271,16 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":9,
          "properties":[
-                {
-                 "name":"blocks_movement",
-                 "type":"bool",
-                 "value":false
-                }, 
-                {
-                 "name":"blocks_vision",
-                 "type":"bool",
-                 "value":false
-                }, 
                 {
                  "name":"emits_light",
                  "type":"bool",
@@ -261,7 +296,7 @@
          "id":10,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -279,6 +314,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
@@ -299,7 +339,7 @@
          "id":12,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -317,21 +357,16 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }]
         }, 
         {
          "id":13,
          "properties":[
-                {
-                 "name":"blocks_movement",
-                 "type":"bool",
-                 "value":false
-                }, 
-                {
-                 "name":"blocks_vision",
-                 "type":"bool",
-                 "value":false
-                }, 
                 {
                  "name":"emits_light",
                  "type":"bool",
@@ -346,16 +381,6 @@
         {
          "id":14,
          "properties":[
-                {
-                 "name":"blocks_movement",
-                 "type":"bool",
-                 "value":false
-                }, 
-                {
-                 "name":"blocks_vision",
-                 "type":"bool",
-                 "value":false
-                }, 
                 {
                  "name":"emits_light",
                  "type":"bool",
@@ -441,7 +466,7 @@
          "id":20,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -459,6 +484,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }],
          "type":"obstacle"
         }, 
@@ -466,7 +496,7 @@
          "id":21,
          "properties":[
                 {
-                 "name":"blocks_movement",
+                 "name":"blocks_light",
                  "type":"bool",
                  "value":true
                 }, 
@@ -484,6 +514,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"vaultable",
+                 "type":"bool",
+                 "value":false
                 }],
          "type":"obstacle"
         }, 

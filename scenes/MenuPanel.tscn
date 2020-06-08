@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.184314, 0.203922, 0.247059, 1 )
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="MenuPanel" type="Panel"]
+margin_right = 292.0
+margin_bottom = 348.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuTween" type="Tween" parent="."]

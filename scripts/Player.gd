@@ -5,10 +5,28 @@ var current_input_time = Global.INPUT_COOLDOWN
 
 
 func _process(delta):
+	# draw a highlight when mouse is over a visible tile
+	var mouse_position = get_viewport().get_mouse_position()
+	var mouse_position_scaled = Vector2(mouse_position.x, mouse_position.y)
+	var viewport_position = get_node("/root/Main/ViewportContainer").rect_position
+	mouse_position_scaled.x -= (viewport_position.x*(Global.scale-1))
+	mouse_position_scaled.y -= (viewport_position.y*(Global.scale-1))
+	mouse_position_scaled.x = int(mouse_position_scaled.x)/3
+	mouse_position_scaled.y = int(mouse_position_scaled.y)/3
+	var cam = get_node("/root/Main/ViewportContainer/Viewport/Camera2D")
+	var cam_position = Vector2(floor(cam.position.x)-6, floor(cam.position.y)-6)
+	var corner_position = Vector2(max(cam_position.x-168,0), max(cam_position.y-168,0))
+	var selected_tile = Vector2(
+		int(corner_position.x+mouse_position_scaled.x)/Global.TILE_WIDTH,
+		int(corner_position.y+mouse_position_scaled.y)/Global.TILE_HEIGHT
+	)
+	var label = get_node("/root/Main/Label")
+	label.text = "%s" % (selected_tile)
 	# do not process certain inputs until some time has passed
 	if current_input_time < Global.INPUT_COOLDOWN:
 		current_input_time += delta
 		return
+	
 	# do not process certain inputs if still moving
 	if in_motion_tween:
 		return
@@ -47,10 +65,6 @@ func _process(delta):
 			get_parent().tilev(tile).actor = self
 			# recompute FOV from new position
 			$Vision.compute_fov()
-			get_node("RogueLight").compute_fov()
-			get_parent().get_node("Renderer").apply_light(get_node("RogueLight"))
-			print("=== AFTER APPLY LIGHT")
-			print(get_parent().tilev(Vector2(20,12)).lights)
 			get_parent().get_node("Renderer").apply_vision($Vision)
 			# modify position on screen
 			var target_position = Vector2()
@@ -61,6 +75,6 @@ func _process(delta):
 
 
 func movement_collision(target_tile):
-	if !target_tile || target_tile.actor || (target_tile.obstacle && target_tile.obstacle.blocks_movement):
+	if !target_tile || target_tile.actor || target_tile.obstacle:
 		return true
 	return false

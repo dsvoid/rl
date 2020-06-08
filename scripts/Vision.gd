@@ -9,10 +9,16 @@ var radius
 var current_octant
 var source = false
 var old_source = false
+var id
 
 
 func _init(r=15):
 	radius = r
+
+
+func _ready():
+	id = get_node("../..").new_light_id
+	get_node("../..").new_light_id += 1
 
 
 func compute_fov():
@@ -22,9 +28,10 @@ func compute_fov():
 	view_shafts.clear() # necessary?
 	if source:
 		old_source = source
-	source = get_parent().tile
-	add_tile(source)
-	old_visible_tiles.erase(source)
+	var source_tile = get_parent().tile
+	source = Vector3(source_tile.x, source_tile.y, id)
+	old_visible_tiles.erase(source_tile)
+	add_tile(source_tile)
 	while current_octant < 8:
 		var initial_view_shaft = ViewShaft.new(1,Vector2(1,0),Vector2(1,1))
 		view_shafts.append(initial_view_shaft)
@@ -56,8 +63,8 @@ func compute_shaft(view_shaft):
 		if !get_parent().get_parent().in_boundsv(actual_tile):
 			continue
 		if i <= top_visible_y && i >= bottom_visible_y:
-			add_tile(actual_tile)
 			old_visible_tiles.erase(actual_tile)
+			add_tile(actual_tile)
 			if has_obstacle(Vector2(column_x,i)):
 				set_seen_faces(actual_tile)
 		if has_vision_blocker(Vector2(column_x,i)):

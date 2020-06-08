@@ -17,8 +17,7 @@ func add_tile(tile):
 	if !visible_tiles.has(tile):
 		visible_tiles[tile] = {
 			"faces": [false,false,false,false], # up, down, left, right face
-			"light_level": light_level,
-			"source": source
+			"light_level": light_level
 		}
 
 
@@ -32,3 +31,17 @@ func set_seen_faces(tile):
 		visible_tiles[tile]["faces"][2] = true
 	if v.x > 0 && !has_obstacle_actual(Vector2(tile.x+1,tile.y)):
 		visible_tiles[tile]["faces"][3] = true
+
+
+func has_vision_blocker_actual(actual_tile):
+	var tile = get_parent().get_parent().tilev(actual_tile)
+	if tile && tile.obstacle && tile.obstacle.blocks_light:
+		return true
+	return false
+
+
+func has_vision_blocker(relative_tile):
+	var tile = get_parent().get_parent().tilev(get_actual_tile(relative_tile))
+	if tile && tile.obstacle && tile.obstacle.blocks_light:
+		return true
+	return false

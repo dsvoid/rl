@@ -10,13 +10,15 @@ var height
 var tiles = []
 var tileset = []
 var tileset_columns
-var lights = {}
+var lights = []
+var new_light_id = 0
 
 func _ready():
 	load_tileset("res://assets/12x12_test.json")
 	load_level("res://maps/12x12_map.json")
 
-	for emitter in lights.values():
+	for i in range(lights.size()):
+		var emitter = lights[i]
 		var light = emitter.get_node("RogueLight")
 		light.compute_fov()
 		$Renderer.apply_light(light)
@@ -54,8 +56,9 @@ func load_level(map_path):
 			if tile.type == "obstacle":
 				entity = Obstacle.instance()
 				tiles[x][y].obstacle = entity
-				entity.blocks_movement = tile.blocks_movement
+				entity.blocks_light = tile.blocks_light
 				entity.blocks_vision = tile.blocks_vision
+				entity.vaultable = tile.vaultable
 				add_child(entity)
 			if tile.type == "actor":
 				entity = Player.instance()
@@ -71,13 +74,11 @@ func load_level(map_path):
 			if tile.type == "ground":
 				entity = ground
 			entity.emits_light = tile.emits_light
-			if tile.type == "actor":
-				entity.emits_light = true
 			entity.tile = location
 			entity.position = position
 			if entity.emits_light:
 				entity.set_light()
-				lights[location] = entity
+				lights.append(entity)
 			var offset_x = (index % tileset_columns) * Global.TILE_WIDTH
 			var offset_y = (index / tileset_columns) * Global.TILE_HEIGHT
 			entity.get_node("Sprite").region_rect = Rect2(
@@ -127,7 +128,7 @@ func in_boundsv(vector):
 
 
 class Tile:
-	var lights = {}
+	var lit_by = {}
 	var light_level = 0
 	var obstacle = false
 	var actor = false
