@@ -8,6 +8,7 @@ var RogueLight = preload("res://scenes/RogueLight.tscn")
 var tile = Vector2() # location within level
 var emits_light = false # used for items like torches, or actors holding them
 var light = false # stores light calculation node if emits_light is true
+var title # generic title for objects. #TODO: how to add detail?
 var usable_inventory = false # flag for whether or not the inventory can be used
 var inventory = [] # any entity can act as a container for other entities
 var target_alpha = 1 # used when an entity needs to display another one on top

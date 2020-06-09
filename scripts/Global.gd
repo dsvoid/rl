@@ -12,3 +12,8 @@ var relative_tile_size
 func set_scale():
 	scale = int(OS.window_size.y)/360
 	relative_tile_size = Vector2(scale*TILE_WIDTH, scale*TILE_HEIGHT)
+
+func mouse_position():
+	var mp = get_node("/root").get_mouse_position()
+	mp = Vector2(floor(mp.x),floor(mp.y))
+	return mp

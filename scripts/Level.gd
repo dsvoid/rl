@@ -74,6 +74,7 @@ func load_level(map_path):
 			if tile.type == "ground":
 				entity = ground
 			entity.emits_light = tile.emits_light
+			entity.title = tile.title
 			entity.tile = location
 			entity.position = position
 			if entity.emits_light:
@@ -87,7 +88,7 @@ func load_level(map_path):
 				Global.TILE_WIDTH,
 				Global.TILE_HEIGHT
 			)
-
+	$Renderer.init_mouse_highlight()
 
 func load_tileset(tileset_path):
 	var f = File.new()

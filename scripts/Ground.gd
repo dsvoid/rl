@@ -4,6 +4,7 @@ class_name Ground
 # Grounds are entities because they need to be able to store items in their own
 # inventory as a pile of stuff. They also have sprite representations.
 
+var render_index = -1 # stores the index of the current rendered sprite
 var render_sprite # stores which sprite is passed to the renderer
 
 
@@ -16,6 +17,7 @@ func add_item(item):
 	# TODO: item prioritization on visibility.
 	render_sprite.visible = false
 	render_sprite = item.get_node("Sprite")
+	render_index = inventory.size() - 1
 	render_sprite.visible = true
 
 

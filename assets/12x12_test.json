@@ -36,6 +36,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"brick wall"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -63,6 +68,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"iron bars"
                 }, 
                 {
                  "name":"type",
@@ -94,6 +104,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"AAQQQZyA"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -121,6 +136,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"???"
                 }, 
                 {
                  "name":"type",
@@ -152,6 +172,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"wood wall"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -179,6 +204,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"???"
                 }, 
                 {
                  "name":"type",
@@ -210,6 +240,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"stone"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -237,6 +272,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"iron bars"
                 }, 
                 {
                  "name":"type",
@@ -268,6 +308,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"iron door"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -285,6 +330,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"open iron door"
                 }, 
                 {
                  "name":"type",
@@ -311,6 +361,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"bookcase"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -330,9 +385,14 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"chains"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
-                 "value":"item"
+                 "value":"ground"
                 }]
         }, 
         {
@@ -354,6 +414,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"door"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -373,9 +438,14 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"open door"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
-                 "value":"obstacle"
+                 "value":"ground"
                 }]
         }, 
         {
@@ -385,6 +455,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"doorway"
                 }, 
                 {
                  "name":"type",
@@ -401,6 +476,11 @@
                  "value":true
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"fire pit"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"item"
@@ -413,6 +493,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"table"
                 }, 
                 {
                  "name":"type",
@@ -429,6 +514,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"chest"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"item"
@@ -443,6 +533,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"open chest"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"item"
@@ -455,6 +550,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"dirt"
                 }, 
                 {
                  "name":"type",
@@ -479,6 +579,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"tree1"
                 }, 
                 {
                  "name":"type",
@@ -511,6 +616,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"tree2"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
@@ -531,6 +641,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"grass"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"ground"
@@ -545,6 +660,11 @@
                  "value":false
                 }, 
                 {
+                 "name":"title",
+                 "type":"string",
+                 "value":"key"
+                }, 
+                {
                  "name":"type",
                  "type":"string",
                  "value":"item"
@@ -557,6 +677,11 @@
                  "name":"emits_light",
                  "type":"bool",
                  "value":false
+                }, 
+                {
+                 "name":"title",
+                 "type":"string",
+                 "value":"villager"
                 }, 
                 {
                  "name":"type",

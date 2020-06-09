@@ -23,7 +23,7 @@ var light_levels_fg = [
 ]
 var black = Color("#000000")
 var grey = Color("#555555")
-
+var mouse_tile_sprite
 
 func init_vision():
 	for i in range(get_parent().width):
@@ -46,6 +46,23 @@ func init_vision():
 			if tile.obstacle && !tile.obstacle.seen_before:
 				tile.obstacle.get_node("Sprite").modulate = black
 
+
+func init_mouse_highlight():
+	mouse_tile_sprite  = TileBGSprite.instance()
+	mouse_tile_sprite.modulate = Color(1,1,1,0.4)
+	mouse_tile_sprite.z_index = 2 # TODO: this will bite me in the ass later
+	mouse_tile_sprite.visible = false
+	add_child(mouse_tile_sprite)
+
+func hide_mouse_highlight():
+	mouse_tile_sprite.visible = false
+
+func mouse_highlight(tile):
+	mouse_tile_sprite.visible = true
+	mouse_tile_sprite.position = Vector2(
+		tile.x * Global.TILE_WIDTH,
+		tile.y * Global.TILE_HEIGHT
+	)
 
 func apply_vision(vision):
 	var old_visible_tiles = vision.old_visible_tiles
