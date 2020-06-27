@@ -9,16 +9,10 @@ var radius
 var current_octant
 var source = false
 var old_source = false
-var id
 
 
 func _init(r=15):
 	radius = r
-
-
-func _ready():
-	id = get_node("../..").new_light_id
-	get_node("../..").new_light_id += 1
 
 
 func compute_fov():
@@ -29,7 +23,7 @@ func compute_fov():
 	if source:
 		old_source = source
 	var source_tile = get_parent().tile
-	source = Vector3(source_tile.x, source_tile.y, id)
+	set_source(source_tile)
 	old_visible_tiles.erase(source_tile)
 	add_tile(source_tile)
 	while current_octant < 8:
@@ -60,7 +54,7 @@ func compute_shaft(view_shaft):
 	for i in range(top_shaft_y,bottom_shaft_y-1,-1):
 		var relative_tile = Vector2(column_x,i)
 		var actual_tile = get_actual_tile(relative_tile)
-		if !get_parent().get_parent().in_boundsv(actual_tile):
+		if !Global.level.in_boundsv(actual_tile):
 			continue
 		if i <= top_visible_y && i >= bottom_visible_y:
 			old_visible_tiles.erase(actual_tile)
@@ -82,6 +76,10 @@ func compute_shaft(view_shaft):
 	
 	if adjusted_shaft.top_vector.y/float(adjusted_shaft.top_vector.x) > bottom_vector.y/float(bottom_vector.x):
 		view_shafts.append(adjusted_shaft)
+
+
+func set_source(source_tile):
+	source = source_tile
 
 
 func get_actual_tile(relative_tile):
@@ -110,28 +108,28 @@ func get_actual_tile(relative_tile):
 
 
 func has_vision_blocker(relative_tile):
-	var tile = get_parent().get_parent().tilev(get_actual_tile(relative_tile))
+	var tile = Global.level.tilev(get_actual_tile(relative_tile))
 	if tile && tile.obstacle && tile.obstacle.blocks_vision:
 		return true
 	return false
 
 
 func has_obstacle(relative_tile):
-	var tile = get_parent().get_parent().tilev(get_actual_tile(relative_tile))
+	var tile = Global.level.tilev(get_actual_tile(relative_tile))
 	if tile && tile.obstacle:
 		return true
 	return false
 
 
 func has_vision_blocker_actual(actual_tile):
-	var tile = get_parent().get_parent().tilev(actual_tile)
+	var tile = Global.level.tilev(actual_tile)
 	if tile && tile.obstacle && tile.obstacle.blocks_vision:
 		return true
 	return false
 
 
 func has_obstacle_actual(actual_tile):
-	var tile = get_parent().get_parent().tilev(actual_tile)
+	var tile = Global.level.tilev(actual_tile)
 	if tile && tile.obstacle:
 		return true
 	return false
@@ -141,6 +139,8 @@ func add_tile(tile):
 	if !visible_tiles.has(tile):
 		#                      up,   down, left, right faces
 		visible_tiles[tile] = [false,false,false,false]
+		if tile == get_parent().tile:
+			visible_tiles[tile] = [true,true,true,true]
 
 
 func set_seen_faces(tile):

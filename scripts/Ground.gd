@@ -4,8 +4,10 @@ class_name Ground
 # Grounds are entities because they need to be able to store items in their own
 # inventory as a pile of stuff. They also have sprite representations.
 
-var render_index = -1 # stores the index of the current rendered sprite
-var render_sprite # stores which sprite is passed to the renderer
+# since the ground sprite might be updated a lot, this variable is its accessor
+var render_sprite
+# stores the original sprite position for the ground texture
+var ground_rect = Rect2(0,0,0,0)
 
 
 func _ready():
@@ -15,30 +17,17 @@ func _ready():
 func add_item(item):
 	.add_item(item)
 	# TODO: item prioritization on visibility.
-	render_sprite.visible = false
-	render_sprite = item.get_node("Sprite")
-	render_index = inventory.size() - 1
-	render_sprite.visible = true
-
-
-# custom color tween code due to the way ground displays sprite
-func apply_color_tween(target):
-	in_color_tween = true
-	target = Color(target.r, target.g, target.b, target_alpha)
-	$ColorTween.interpolate_property(
-		render_sprite, "modulate", render_sprite.modulate, target,
-		Global.TWEEN_DURATION, Tween.TRANS_LINEAR
+	var sprite_index = item.sprite_index
+	var tileset_columns = Global.level.tileset_columns
+	var offset_x = (sprite_index % tileset_columns) * Global.TILE_WIDTH
+	var offset_y = (sprite_index / tileset_columns) * Global.TILE_HEIGHT
+	$Sprite.region_rect = Rect2(
+		offset_x, offset_y, Global.TILE_WIDTH, Global.TILE_HEIGHT
 	)
-	$ColorTween.start()
 
 
-func fade(alpha):
-	target_alpha = alpha
-	in_color_tween = true
-	var rgb = render_sprite.modulate
-	var target = Color(rgb.r, rgb.g, rgb.b, target_alpha)
-	$ColorTween.interpolate_property(
-		render_sprite, "modulate", render_sprite.modulate, target, Global.TWEEN_DURATION,
-		Tween.TRANS_LINEAR
-	)
-	$ColorTween.start()
+func remove_item(item):
+	var i = .remove_item(item)
+	if inventory_sorted_by_title.size() == 0:
+		$Sprite.region_rect = ground_rect
+	return i

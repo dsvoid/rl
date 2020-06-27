@@ -1,15 +1,27 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.184314, 0.203922, 0.247059, 1 )
-border_color = Color( 1, 1, 1, 1 )
+[ext_resource path="res://themes and styles/theme_rl.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/InventoryPanel.gd" type="Script" id=3]
+[ext_resource path="res://themes and styles/stylebox_rl.tres" type="StyleBox" id=4]
 
 [node name="MenuPanel" type="Panel"]
-margin_right = 292.0
+margin_left = 648.0
+margin_right = 932.0
 margin_bottom = 348.0
-custom_styles/panel = SubResource( 1 )
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="MenuTween" type="Tween" parent="."]
+
+[node name="InventoryPanel" type="Panel" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 4 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -26,9 +26,9 @@ var grey = Color("#555555")
 var mouse_tile_sprite
 
 func init_vision():
-	for i in range(get_parent().width):
+	for i in range(Global.level.width):
 		tile_bgs.append([])
-		for j in range(get_parent().height):
+		for j in range(Global.level.height):
 			var tile_bg = TileBGSprite.instance()
 			tile_bg.position.x = i * Global.TILE_WIDTH
 			tile_bg.position.y = j * Global.TILE_HEIGHT
@@ -36,10 +36,10 @@ func init_vision():
 			add_child(tile_bg)
 			tile_bgs[i].append(tile_bg)
 	
-	observer = get_parent().get_node("Player")
-	for i in range(get_parent().width):
-		for j in range(get_parent().height):
-			var tile = get_parent().tile(i,j)
+	observer = Global.level.get_node("Player")
+	for i in range(Global.level.width):
+		for j in range(Global.level.height):
+			var tile = Global.level.tile(i,j)
 			tile.ground.render_sprite.modulate = black
 			if tile.actor:
 				tile.actor.get_node("Sprite").modulate = black
@@ -68,7 +68,7 @@ func apply_vision(vision):
 	var old_visible_tiles = vision.old_visible_tiles
 	var visible_tiles = vision.visible_tiles
 	for i in old_visible_tiles:
-		var tile = get_parent().tilev(i)
+		var tile = Global.level.tilev(i)
 		apply_tile_bg_tween(tile_bgs[i.x][i.y], black)
 		tile.ground.apply_color_tween(black)
 		if tile.actor:
@@ -76,7 +76,7 @@ func apply_vision(vision):
 		if tile.obstacle:
 			tile.obstacle.apply_color_tween(grey)
 	for i in visible_tiles:
-		var tile = get_parent().tilev(i)
+		var tile = Global.level.tilev(i)
 		light_tile(tile,i)
 		var bg_color = light_levels_bg[tile.light_level]
 		var fg_color = light_levels_fg[tile.light_level]
@@ -95,11 +95,11 @@ func apply_light(light):
 	var old_visible_tiles = light.old_visible_tiles
 	var visible_tiles = light.visible_tiles
 	for i in old_visible_tiles:
-		var tile = get_parent().tilev(i)
+		var tile = Global.level.tilev(i)
 		if (light.old_source):
 			tile.lit_by.erase(light.old_source)
 	for i in visible_tiles:
-		var tile = get_parent().tilev(i)
+		var tile = Global.level.tilev(i)
 		if (light.old_source):
 			tile.lit_by.erase(light.old_source)
 		tile.lit_by[light.source] = {
@@ -126,6 +126,7 @@ func light_tile(tile,location):
 
 func apply_tile_bg_tween(sprite,target):
 	$TileBGTween.interpolate_property(
-		sprite, "modulate", sprite.modulate, target, 0.0833, Tween.TRANS_LINEAR
+		sprite, "modulate", sprite.modulate, target,
+		Global.TWEEN_DURATION, Tween.TRANS_LINEAR
 	)
 	$TileBGTween.start()

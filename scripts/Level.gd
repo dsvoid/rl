@@ -2,6 +2,7 @@ extends Node
 
 var Obstacle = preload("res://scenes/Obstacle.tscn")
 var Player = preload("res://scenes/Player.tscn")
+var Actor = preload("res://scenes/Actor.tscn")
 var Item = preload("res://scenes/Item.tscn")
 var Ground = preload("res://scenes/Ground.tscn")
 var p # stores player node
@@ -14,8 +15,9 @@ var lights = []
 var new_light_id = 0
 
 func _ready():
-	load_tileset("res://assets/12x12_test.json")
-	load_level("res://maps/12x12_map.json")
+	Global.level = self
+	load_tileset("res://assets/12x12_dev.json")
+	load_level("res://maps/0.2.0_map.json")
 
 	for i in range(lights.size()):
 		var emitter = lights[i]
@@ -23,13 +25,14 @@ func _ready():
 		light.compute_fov()
 		$Renderer.apply_light(light)
 	$Renderer.init_vision()
-	$Player/Vision.compute_fov()
-	$Renderer.apply_vision($Player/Vision)
+	p.get_node("Vision").compute_fov()
+	$Renderer.apply_vision(p.get_node("Vision"))
 
 
 func load_level(map_path):
 	var f = File.new()
 	f.open("%s" % map_path, f.READ)
+	
 	var map = JSON.parse(f.get_as_text()).result
 	f.close()
 	width = int(map["width"])
@@ -46,57 +49,34 @@ func load_level(map_path):
 		var position = Vector2(x*Global.TILE_WIDTH, y*Global.TILE_HEIGHT)
 		var ground = Ground.instance()
 		tiles[x][y].ground = ground
-		ground.tile = location
 		ground.position = position
+		ground.tile = location
+		ground.usable_inventory = true
 		add_child(ground)
 		if map_tiles[i] != 0:
 			var index = int(map_tiles[i]-1)
 			var tile = tileset[index]
-			var entity
-			if tile.type == "obstacle":
-				entity = Obstacle.instance()
-				tiles[x][y].obstacle = entity
-				entity.blocks_light = tile.blocks_light
-				entity.blocks_vision = tile.blocks_vision
-				entity.vaultable = tile.vaultable
-				add_child(entity)
-			if tile.type == "actor":
-				entity = Player.instance()
-				tiles[x][y].actor = entity
-				add_child(entity)
-				p = entity
-			if tile.type == "item":
-				entity = Item.instance()
-				# let ground handle representation of item
-				entity.get_node("Sprite").visible = false
-				tiles[x][y].ground.add_item(entity)
-				add_child(entity)
-			if tile.type == "ground":
-				entity = ground
-			entity.emits_light = tile.emits_light
-			entity.title = tile.title
-			entity.tile = location
-			entity.position = position
-			if entity.emits_light:
-				entity.set_light()
-				lights.append(entity)
 			var offset_x = (index % tileset_columns) * Global.TILE_WIDTH
 			var offset_y = (index / tileset_columns) * Global.TILE_HEIGHT
-			entity.get_node("Sprite").region_rect = Rect2(
-				offset_x,
-				offset_y,
-				Global.TILE_WIDTH,
-				Global.TILE_HEIGHT
+			var sprite_rect = Rect2(
+				offset_x, offset_y, Global.TILE_WIDTH, Global.TILE_HEIGHT
 			)
-	$Renderer.init_mouse_highlight()
+			if tile.type == "ground":
+				ground.ground_rect = sprite_rect
+				ground.render_sprite.region_rect = ground.ground_rect
+			if tile.type == "obstacle":
+				add_obstacle(location,tile,sprite_rect)
+			if tile.type == "actor":
+				add_actor(location,tile,sprite_rect)
+			if tile.type == "item":
+				add_item(location,tile,index)
+	$Renderer.init_mouse_highlight() #TODO: move somewhere nicer
 
 func load_tileset(tileset_path):
 	var f = File.new()
 	f.open("%s" % tileset_path, f.READ)
 	var tiled_data = JSON.parse(f.get_as_text()).result
 	f.close()
-	var image_width = tiled_data["imagewidth"]
-	var image_height = tiled_data["imageheight"]
 	tileset_columns = int(tiled_data["columns"])
 	for i in range(tiled_data["tiles"].size()):
 		var tile = tiled_data["tiles"][i]
@@ -126,6 +106,63 @@ func in_bounds(x,y):
 
 func in_boundsv(vector):
 	return vector.x > -1 && vector.y > -1 && vector.x < width && vector.y < height
+
+
+func add_obstacle(location,tile,sprite_rect):
+	var position = Vector2(
+		location.x*Global.TILE_WIDTH,
+		location.y*Global.TILE_HEIGHT
+	)
+	var obstacle = Obstacle.instance()
+	tiles[location.x][location.y].obstacle = obstacle
+	obstacle.blocks_light = tile.blocks_light
+	obstacle.blocks_vision = tile.blocks_vision
+	obstacle.emits_light = tile.emits_light
+	obstacle.tile = location
+	obstacle.position = position
+	obstacle.title = tile.title
+	obstacle.vaultable = tile.vaultable
+	obstacle.get_node("Sprite").region_rect = sprite_rect
+	add_child(obstacle)
+	if obstacle.emits_light:
+		obstacle.set_light()
+		lights.append(obstacle)
+
+
+func add_actor(location,tile,sprite_rect):
+	var position = Vector2(
+		location.x*Global.TILE_WIDTH,
+		location.y*Global.TILE_HEIGHT
+	)
+	var actor
+	if tile.title == "player":
+		actor = Player.instance()
+		p = actor
+	else:
+		actor = Actor.instance()
+	tiles[location.x][location.y].actor = actor
+	actor.emits_light = tile.emits_light
+	actor.humanoid = tile.humanoid # TODO: make this a subclass of actor
+	actor.one_handed = tile.one_handed
+	actor.position = position
+	actor.tile = location
+	actor.title = tile.title
+	actor.wide = tile.wide
+	actor.get_node("Sprite").region_rect = sprite_rect
+	add_child(actor)
+	if actor.emits_light:
+		actor.set_light()
+		lights.append(actor)
+
+
+func add_item(location,tile,index):
+	var item = Item.instance()
+	item.category = tile.category
+	item.emits_light = tile.emits_light
+	item.sprite_index = index
+	item.title = tile.title
+	add_child(item)
+	tiles[location.x][location.y].ground.add_item(item)
 
 
 class Tile:

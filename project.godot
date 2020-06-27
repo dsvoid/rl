@@ -25,11 +25,6 @@ _global_script_classes=[ {
 "path": "res://scripts/Ground.gd"
 }, {
 "base": "Entity",
-"class": "Item",
-"language": "GDScript",
-"path": "res://scripts/Item.gd"
-}, {
-"base": "Entity",
 "class": "Obstacle",
 "language": "GDScript",
 "path": "res://scripts/Obstacle.gd"
@@ -53,7 +48,6 @@ _global_script_class_icons={
 "Actor": "",
 "Entity": "",
 "Ground": "",
-"Item": "",
 "Obstacle": "",
 "Player": "",
 "RogueLight": "",
@@ -69,6 +63,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Global="*res://scripts/Global.gd"
+InputHandler="*res://scripts/InputHandler.gd"
 
 [display]
 

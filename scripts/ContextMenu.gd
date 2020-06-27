@@ -4,10 +4,9 @@ func _ready():
 	visible = false
 
 func show_context_menu(location):
-	var mouse_position = Global.mouse_position()
+	var mouse_position = InputHandler.mouse_position()
 	rect_position = mouse_position
-	var level = get_node("/root/Main/ViewportContainer/Viewport/Level")
-	var tile = level.tilev(location)
+	var tile = Global.level.tilev(location)
 	if tile.obstacle:
 		$NameLabel.text = tile.obstacle.title
 	elif tile.actor:
@@ -27,7 +26,7 @@ func show_context_menu(location):
 		visible = true
 		rect_size = $NameLabel.get_minimum_size()
 		rect_size.x += 2
-		rect_size.y = 12
+		rect_size.y = 13
 		# draw rest of context
 	else:
 		visible = false

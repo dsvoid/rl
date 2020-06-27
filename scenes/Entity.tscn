@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/Entity.gd" type="Script" id=1]
-[ext_resource path="res://assets/12x12_test.png" type="Texture" id=2]
+[ext_resource path="res://assets/12x12_dev.png" type="Texture" id=2]
 
 [node name="Entity" type="Node2D"]
 script = ExtResource( 1 )
