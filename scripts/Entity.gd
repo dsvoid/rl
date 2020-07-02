@@ -1,25 +1,23 @@
-# An entity represents anything that is placed within a level.
-# It is the base class for obstacles, actors, items, and floor tiles.
+# An entity represents anything that placed i na level that has inherent
+# behaviours, such as actors, obstacles, and floor tiles.
+# Items are not entities: entities are what can use and store items.
 extends Node2D
 class_name Entity
 
 var RogueLight = preload("res://scenes/RogueLight.tscn")
 
 var tile = Vector2() # location within level
-var emits_light = false # used for items like torches, or actors holding them
+var emits_light = false # used for entities holding light sources
 var light = false # stores light calculation node if emits_light is true
-var title # generic title for objects. #TODO: how to add detail?
+var title # generic title. #TODO: how to add detail?
 var usable_inventory = false # flag for whether or not the inventory can be used
 # all entities act as containers for items.
 # entities do not contain other entities.
 var inventory = {}
-# a pre-sorted list of item titles in the current inventory.
-# used to quickly display inventory alphabetically without sorting constantly.
-var inventory_sorted_by_title = []
-# reference to a panel that can be created when looking through an inventory
+# reference to a UI element that is populated when looking through an inventory
 var inventory_panel = false
-
-var target_alpha = 1 # used when an entity needs to display another one on top
+# used when an entity needs to display another one on top
+var target_alpha = 1
 # flags for whether or not an entity is undergoing a tween
 var in_color_tween = false
 var in_motion_tween = false
@@ -32,44 +30,37 @@ func _ready():
 
 
 # TODO: incomplete
-func add_item(item):
-	if !inventory.has(item.title):
-		inventory[item.title] = [item]
-		# add inventory item name to alphabetically sorted list of items
-		var insertion_index = inventory_sorted_by_title.bsearch(item.title)
-		inventory_sorted_by_title.insert(insertion_index, item.title)
+func add_item(item_title):
+	if !inventory.has(item_title):
+		inventory[item_title] = {
+			"count": 1,
+			"item": Global.level.items[item_title]
+		}
 		if inventory_panel:
-			inventory_panel.add_inventory_label(item.title, insertion_index)
+			inventory_panel.add_item_control(item_title)
 	else:
-		inventory[item.title].append(item)
+		inventory[item_title].count += 1
 		if inventory_panel:
-			inventory_panel.update_item_count(item.title)
-	
+			inventory_panel.update_item_control_count_by_title(item_title)
 
 
 func remove_item(item_title):
 	if inventory.has(item_title):
-		var item = inventory[item_title].pop_front()
-		if inventory[item_title].size() == 0:
+		inventory[item_title].count -= 1
+		if inventory[item_title].count == 0:
 			# remove item key when there's none of that item left
 			inventory.erase(item_title)
-			var removal_index = inventory_sorted_by_title.bsearch(item_title)
-			inventory_sorted_by_title.remove(removal_index)
 			if inventory_panel:
-				inventory_panel.remove_inventory_label(removal_index)
-		return item
+				inventory_panel.remove_item_control(item_title)
+		elif inventory_panel:
+			inventory_panel.update_item_control_count_by_title(item_title)
 	return false
 
 
-func item_count(item_title):
-	if !inventory.has(item_title):
-		return 0
-	return inventory[item_title].size()
-
-
-# call this after running remove_item. This only destroys the item.
-func destroy_item(item):
-	item.queue_free()
+func drop_item(item_title,equip_location=false):
+	remove_item(item_title)
+	var ground = Global.level.tilev(tile).ground
+	ground.add_item(item_title)
 
 
 func set_light():
@@ -81,7 +72,7 @@ func apply_motion_tween(target):
 	in_motion_tween = true
 	$MotionTween.interpolate_property(
 		self, "position", position, target, Global.TWEEN_DURATION,
-		Tween.TRANS_LINEAR
+		Tween.TRANS_QUAD, Tween.EASE_OUT
 	)
 	$MotionTween.start()
 

@@ -7,7 +7,7 @@ var valid_mouse_tile_context
 
 func _ready():
 	inventory_panel = get_node("/root/Main/MenuPanel/InventoryPanel")
-	inventory_panel.init_inventory_display(self)
+	inventory_panel.init_display(self)
 
 func _process(delta):
 	# locate the tile the mouse is hovering over

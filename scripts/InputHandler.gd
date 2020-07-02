@@ -8,10 +8,11 @@ var last_left_click_time = 0
 var last_left_click_tile = Vector2(-1,-1)
 # default length of a double click is 500ms according to msoft
 const double_click_time = 0.5
+var active_item_control = false
 
 
 func _ready():
-	pass
+	Global.input_handler = self
 
 func mouse_position():
 	var mp = get_node("/root").get_mouse_position()
@@ -82,6 +83,8 @@ func double_click_action():
 		if obstacle:
 			if obstacle.usable_inventory:
 				# open obstacle's inventory
+				# assign obstacle's inventory to the loot panel's ItemList
+				# display the loot panel
 				pass
 			else:
 				# search the obstacle for an inventory
@@ -92,25 +95,61 @@ func double_click_action():
 			# not really sure what to do here. Attack?
 			return
 		var ground = level_tile.ground
-		if ground.inventory_sorted_by_title.size() == 1:
-			var item_title = ground.inventory_sorted_by_title[0]
-			if ground.item_count(item_title) == 1:
-				var item = ground.remove_item(item_title)
-				Global.level.p.add_item(item)
-				return
-			else:
-				# open inventory
-				return
-		elif ground.inventory_sorted_by_title.size() > 1:
+		if (ground.inventory.keys().size() == 1 &&
+			ground.inventory[ground.inventory.keys()[0]].count == 1):
+			var item_title = ground.inventory.keys()[0]
+			Global.level.p.add_item(item_title)
+			ground.remove_item(item_title)
+			return
+		else:
 			# open inventory
+			# assign obstacle's inventory to the loot panel's ItemList
+			# display the loot panel
 			return
 	else:
-		# not sure what to do if clicking a tile that isn't neighbouring
+		# not sure what to do if double-clicking a tile that isn't neighbouring
 		return
 
 
 func _process(delta):
 	last_left_click_time += delta
+	if active_item_control:
+		process_inventory_item_input()
+		pass
+
+
+func process_inventory_item_input():
+	var player = Global.level.p
+	var item_title = active_item_control.item_title
+	var item = Global.level.items[item_title]
+	if Input.is_action_just_pressed("left_click"):
+		# perform action based on item category:
+		# arms: equip
+		if item.category == "arms":
+			var equipped_left = player.hands.left
+			if equipped_left && equipped_left == item_title:
+				player.unequip_hand("left")
+			else:
+				player.equip_item(item_title,"left")
+			active_item_control = false
+		# aid: consume
+		# ammo: nothing
+		# docs: read
+		# keys: nothing
+		pass
+	elif Input.is_action_just_pressed("right_click"):
+		# equip item as secondary if it is one of the arms.
+		# otherwise do nothing I suppose
+		pass
+	elif Input.is_action_just_released("drop_inventory_item"):
+		# pressing R (by default) should drop the item on the ground.
+		if active_item_control.equip_location:
+			player.drop_equipped_item(active_item_control.equip_location)
+		else:
+			player.drop_item(item_title)
+		var ground = Global.level.tilev(player.tile).ground
+		active_item_control = false
+	pass
 
 
 func neighbouring_tiles(tile1, tile2):

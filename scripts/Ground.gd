@@ -14,9 +14,10 @@ func _ready():
 	render_sprite = $Sprite
 
 
-func add_item(item):
-	.add_item(item)
+func add_item(item_title):
+	.add_item(item_title)
 	# TODO: item prioritization on visibility.
+	var item = Global.level.items[item_title]
 	var sprite_index = item.sprite_index
 	var tileset_columns = Global.level.tileset_columns
 	var offset_x = (sprite_index % tileset_columns) * Global.TILE_WIDTH
@@ -28,6 +29,6 @@ func add_item(item):
 
 func remove_item(item):
 	var i = .remove_item(item)
-	if inventory_sorted_by_title.size() == 0:
+	if inventory.keys().size() == 0:
 		$Sprite.region_rect = ground_rect
 	return i

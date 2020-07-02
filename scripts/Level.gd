@@ -13,6 +13,7 @@ var tileset = []
 var tileset_columns
 var lights = []
 var new_light_id = 0
+var items = {}
 
 func _ready():
 	Global.level = self
@@ -155,14 +156,18 @@ func add_actor(location,tile,sprite_rect):
 		lights.append(actor)
 
 
+# function assumes all placed items have distinct names
 func add_item(location,tile,index):
-	var item = Item.instance()
-	item.category = tile.category
-	item.emits_light = tile.emits_light
-	item.sprite_index = index
-	item.title = tile.title
-	add_child(item)
-	tiles[location.x][location.y].ground.add_item(item)
+	# add item to list if it doesn't exist yet
+	if !items.has(tile.title):
+		var item = Item.instance()
+		item.category = tile.category
+		item.emits_light = tile.emits_light
+		item.sprite_index = index
+		item.title = tile.title
+		items[tile.title] = item
+		$Items.add_child(item)
+	tiles[location.x][location.y].ground.add_item(tile.title)
 
 
 class Tile:

@@ -10,6 +10,9 @@ var scale
 var relative_tile_size
 var level
 var input_handler
+var inventory_hover_stylebox = load("res://themes and styles/stylebox_hov.tres")
+# TODO: assess if useful
+var inventory_blank_stylebox = load("res://themes and styles/stylebox_rl.tres")
 
 
 func set_scale():

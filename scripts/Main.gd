@@ -42,6 +42,7 @@ func show_menu():
 
 
 func hide_menu():
+#	Global.input_handler.active_inventory_label = false
 	vpc_tween.interpolate_property(
 		vpc, "rect_position", vpc.rect_position, base_vpc_position,
 		Global.TWEEN_DURATION, Tween.TRANS_QUAD, Tween.EASE_OUT
