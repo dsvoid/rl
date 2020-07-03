@@ -1,7 +1,6 @@
 extends ColorRect
-var index
 var item_title
-var equip_location = false # if item is equipped, the equip location is put here
+var equip_location
 
 func _ready():
 	connect("mouse_entered", self, "set_active")

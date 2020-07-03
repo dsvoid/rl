@@ -30,23 +30,23 @@ func _ready():
 
 
 # TODO: incomplete
-func add_item(item_title):
+func add_item(item_title,count=1):
 	if !inventory.has(item_title):
 		inventory[item_title] = {
-			"count": 1,
+			"count": count,
 			"item": Global.level.items[item_title]
 		}
 		if inventory_panel:
 			inventory_panel.add_item_control(item_title)
 	else:
-		inventory[item_title].count += 1
+		inventory[item_title].count += count
 		if inventory_panel:
 			inventory_panel.update_item_control_count_by_title(item_title)
 
 
-func remove_item(item_title):
+func remove_item(item_title,count=1):
 	if inventory.has(item_title):
-		inventory[item_title].count -= 1
+		inventory[item_title].count -= count
 		if inventory[item_title].count == 0:
 			# remove item key when there's none of that item left
 			inventory.erase(item_title)

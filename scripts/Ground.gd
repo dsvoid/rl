@@ -14,8 +14,8 @@ func _ready():
 	render_sprite = $Sprite
 
 
-func add_item(item_title):
-	.add_item(item_title)
+func add_item(item_title,count=1):
+	.add_item(item_title,count)
 	# TODO: item prioritization on visibility.
 	var item = Global.level.items[item_title]
 	var sprite_index = item.sprite_index
@@ -27,8 +27,8 @@ func add_item(item_title):
 	)
 
 
-func remove_item(item):
-	var i = .remove_item(item)
+func remove_item(item,count=1):
+	var i = .remove_item(item,count)
 	if inventory.keys().size() == 0:
 		$Sprite.region_rect = ground_rect
 	return i

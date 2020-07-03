@@ -113,12 +113,12 @@ func double_click_action():
 
 func _process(delta):
 	last_left_click_time += delta
-	if active_item_control:
-		process_inventory_item_input()
+	if is_instance_valid(active_item_control):
+		process_item_control_input()
 		pass
 
 
-func process_inventory_item_input():
+func process_item_control_input():
 	var player = Global.level.p
 	var item_title = active_item_control.item_title
 	var item = Global.level.items[item_title]
@@ -126,8 +126,7 @@ func process_inventory_item_input():
 		# perform action based on item category:
 		# arms: equip
 		if item.category == "arms":
-			var equipped_left = player.hands.left
-			if equipped_left && equipped_left == item_title:
+			if active_item_control.equip_location == "left":
 				player.unequip_hand("left")
 			else:
 				player.equip_item(item_title,"left")
@@ -143,12 +142,15 @@ func process_inventory_item_input():
 		pass
 	elif Input.is_action_just_released("drop_inventory_item"):
 		# pressing R (by default) should drop the item on the ground.
-		if active_item_control.equip_location:
+		if active_item_control.equip_location != "none":
 			player.drop_equipped_item(active_item_control.equip_location)
 		else:
 			player.drop_item(item_title)
 		var ground = Global.level.tilev(player.tile).ground
-		active_item_control = false
+		# if the control remains after remove item is called,
+		# don't unset which item control is active
+		if !player.inventory.has(item_title):
+			active_item_control = false
 	pass
 
 
