@@ -50,6 +50,7 @@ func mouse_tile():
 	mouse_tile = mt
 	return mouse_tile
 
+
 # executed from player process function
 # when the mouse is hovering over a valid tile for player actions
 func process_mouse_tile_input():
@@ -121,6 +122,7 @@ func _process(delta):
 func process_item_control_input():
 	var player = Global.level.p
 	var item_title = active_item_control.item_title
+	var equip_location = active_item_control.equip_location
 	var item = Global.level.items[item_title]
 	if Input.is_action_just_pressed("left_click"):
 		# perform action based on item category:
@@ -128,17 +130,25 @@ func process_item_control_input():
 		if item.category == "arms":
 			if active_item_control.equip_location == "left":
 				player.unequip_hand("left")
+			elif active_item_control.equip_location == "right":
+				player.unequip_hand("right")
+				player.equip_item(item_title,"left")
 			else:
 				player.equip_item(item_title,"left")
-			active_item_control = false
 		# aid: consume
 		# ammo: nothing
 		# docs: read
 		# keys: nothing
 		pass
 	elif Input.is_action_just_pressed("right_click"):
-		# equip item as secondary if it is one of the arms.
-		# otherwise do nothing I suppose
+		if item.category == "arms":
+			if active_item_control.equip_location == "right":
+				player.unequip_hand("right")
+			elif active_item_control.equip_location == "left":
+				player.unequip_hand("left")
+				player.equip_item(item_title,"right")
+			else:
+				player.equip_item(item_title,"right")
 		pass
 	elif Input.is_action_just_released("drop_inventory_item"):
 		# pressing R (by default) should drop the item on the ground.
@@ -149,8 +159,8 @@ func process_item_control_input():
 		var ground = Global.level.tilev(player.tile).ground
 		# if the control remains after remove item is called,
 		# don't unset which item control is active
-		if !player.inventory.has(item_title):
-			active_item_control = false
+#	if equip_location == "none" && !player.inventory.has(item_title):
+#		active_item_control = false
 	pass
 
 
