@@ -8,11 +8,31 @@ var last_left_click_time = 0
 var last_left_click_tile = Vector2(-1,-1)
 # default length of a double click is 500ms according to msoft
 const double_click_time = 0.5
-var active_item_control = false
+var inventory_panel
+var transfer_panel_player
+var transfer_panel_other
+var active_transfer_panel = false
 
 
 func _ready():
 	Global.input_handler = self
+	inventory_panel = get_node("/root/Main/MenuPanel/InventoryPanel")
+	transfer_panel_player = get_node("/root/Main/TransferMenu/TransferPanelPlayer")
+	transfer_panel_other = get_node("/root/Main/TransferMenu/TransferPanelOther")
+
+
+func _process(delta):
+	last_left_click_time += delta
+	if is_instance_valid(inventory_panel.active_item_control):
+		active_transfer_panel = false
+		process_item_control_input()
+	elif is_instance_valid(transfer_panel_player.active_item_control):
+		active_transfer_panel = "player"
+		process_transfer_control_input()
+	elif is_instance_valid(transfer_panel_other.active_item_control):
+		active_transfer_panel = "other"
+		process_transfer_control_input()
+
 
 func mouse_position():
 	var mp = get_node("/root").get_mouse_position()
@@ -20,8 +40,10 @@ func mouse_position():
 	mouse_position = Vector2(floor(mp.x),floor(mp.y))
 	return mouse_position
 
+
 func mouse_position_changed():
 	return previous_mouse_position != mouse_position
+
 
 # sets the tile the mouse is hovering over
 # only run this function if there's a player on the level
@@ -86,6 +108,11 @@ func double_click_action():
 				# open obstacle's inventory
 				# assign obstacle's inventory to the loot panel's ItemList
 				# display the loot panel
+				obstacle.inventory_panel = transfer_panel_other
+				transfer_panel_other.init_display(obstacle)
+				get_node("/root/Main").left_viewport()
+				get_node("/root/Main").hide_menu()
+				get_node("/root/Main").show_transfer_menu()
 				pass
 			else:
 				# search the obstacle for an inventory
@@ -102,24 +129,24 @@ func double_click_action():
 			Global.level.p.add_item(item_title)
 			ground.remove_item(item_title)
 			return
-		else:
+		elif (ground.inventory.keys().size() > 1 ||
+			ground.inventory[ground.inventory.keys()[0]].count > 1):
 			# open inventory
 			# assign obstacle's inventory to the loot panel's ItemList
 			# display the loot panel
+			ground.inventory_panel = transfer_panel_other
+			transfer_panel_other.init_display(ground)
+			get_node("/root/Main").left_viewport()
+			get_node("/root/Main").hide_menu()
+			get_node("/root/Main").show_transfer_menu()
 			return
 	else:
 		# not sure what to do if double-clicking a tile that isn't neighbouring
 		return
 
 
-func _process(delta):
-	last_left_click_time += delta
-	if is_instance_valid(active_item_control):
-		process_item_control_input()
-		pass
-
-
 func process_item_control_input():
+	var active_item_control = inventory_panel.active_item_control
 	var player = Global.level.p
 	var item_title = active_item_control.item_title
 	var equip_location = active_item_control.equip_location
@@ -156,11 +183,28 @@ func process_item_control_input():
 			player.drop_equipped_item(active_item_control.equip_location)
 		else:
 			player.drop_item(item_title)
-		var ground = Global.level.tilev(player.tile).ground
-		# if the control remains after remove item is called,
-		# don't unset which item control is active
-#	if equip_location == "none" && !player.inventory.has(item_title):
-#		active_item_control = false
+
+
+func process_transfer_control_input():
+	var source
+	var target
+	var active_item_control
+	if active_transfer_panel == "player":
+		active_item_control = transfer_panel_player.active_item_control
+		source = transfer_panel_player.entity
+		target = transfer_panel_other.entity
+	elif active_transfer_panel == "other":
+		active_item_control = transfer_panel_other.active_item_control
+		source = transfer_panel_other.entity
+		target = transfer_panel_player.entity
+	var item_title = active_item_control.item_title
+	if Input.is_action_just_pressed("left_click"):
+		if active_item_control.equip_location == "none":
+			source.transfer_item(item_title,target)
+		else:
+			source.transfer_hand(active_item_control.equip_location,target)
+		transfer_panel_player.active_item_control = false
+		transfer_panel_other.active_item_control = false
 	pass
 
 

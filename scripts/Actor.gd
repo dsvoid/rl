@@ -29,6 +29,8 @@ func equip_item(item_title, hand):
 	hands[hand] = item_title
 	if inventory_panel:
 		inventory_panel.add_item_control(item_title,hand)
+	if transfer_panel:
+		transfer_panel.add_item_control(item_title,hand)
 
 
 func unequip_hand(hand):
@@ -37,6 +39,8 @@ func unequip_hand(hand):
 		hands[hand] = false
 		if inventory_panel:
 			inventory_panel.remove_item_control(item_title,hand)
+		if transfer_panel:
+			transfer_panel.remove_item_control(item_title,hand)
 		add_item(item_title)
 		return item_title
 
@@ -44,3 +48,9 @@ func unequip_hand(hand):
 func drop_equipped_item(hand):
 	var item_title = unequip_hand(hand)
 	drop_item(item_title)
+
+
+func transfer_hand(hand,target):
+	var item_title = hands[hand]
+	unequip_hand(hand)
+	transfer_item(item_title,target)

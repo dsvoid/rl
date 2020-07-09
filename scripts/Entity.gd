@@ -16,6 +16,8 @@ var usable_inventory = false # flag for whether or not the inventory can be used
 var inventory = {}
 # reference to a UI element that is populated when looking through an inventory
 var inventory_panel = false
+# reference to a UI element only used by the player
+var transfer_panel = false # TODO: use a duplicate of the invpanel instead?
 # used when an entity needs to display another one on top
 var target_alpha = 1
 # flags for whether or not an entity is undergoing a tween
@@ -38,10 +40,14 @@ func add_item(item_title,count=1):
 		}
 		if inventory_panel:
 			inventory_panel.add_item_control(item_title)
+		if transfer_panel:
+			transfer_panel.add_item_control(item_title)
 	else:
 		inventory[item_title].count += count
 		if inventory_panel:
 			inventory_panel.update_item_control_count_by_title(item_title)
+		if transfer_panel:
+			transfer_panel.update_item_control_count_by_title(item_title)
 
 
 func remove_item(item_title,count=1):
@@ -52,15 +58,25 @@ func remove_item(item_title,count=1):
 			inventory.erase(item_title)
 			if inventory_panel:
 				inventory_panel.remove_item_control(item_title)
-		elif inventory_panel:
-			inventory_panel.update_item_control_count_by_title(item_title)
+			if transfer_panel:
+				transfer_panel.remove_item_control(item_title)
+		else:
+			if inventory_panel:
+				inventory_panel.update_item_control_count_by_title(item_title)
+			if transfer_panel:
+				transfer_panel.update_item_control_count_by_title(item_title)
 	return false
 
 
-func drop_item(item_title,equip_location=false):
+func drop_item(item_title):
 	remove_item(item_title)
 	var ground = Global.level.tilev(tile).ground
 	ground.add_item(item_title)
+
+
+func transfer_item(item_title,target,count=1):
+	remove_item(item_title,count)
+	target.add_item(item_title,count)
 
 
 func set_light():

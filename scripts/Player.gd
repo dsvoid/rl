@@ -8,6 +8,8 @@ var valid_mouse_tile_context
 func _ready():
 	inventory_panel = get_node("/root/Main/MenuPanel/InventoryPanel")
 	inventory_panel.init_display(self)
+	transfer_panel = get_node("/root/Main/TransferMenu/TransferPanelPlayer")
+	transfer_panel.init_display(self)
 
 func _process(delta):
 	# locate the tile the mouse is hovering over
@@ -84,7 +86,6 @@ func _process(delta):
 			Global.level.get_node("Renderer").hide_mouse_highlight()
 #			get_node("/root/Main/ContextMenu").hide_context_menu()
 		current_input_time = 0
-
 
 func movement_collision(target_tile):
 	if !target_tile || target_tile.actor || target_tile.obstacle:

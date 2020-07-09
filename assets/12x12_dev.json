@@ -46,6 +46,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -78,6 +83,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -114,6 +124,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -146,6 +161,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -182,6 +202,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -214,6 +239,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -250,6 +280,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -282,6 +317,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -318,6 +358,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -350,6 +395,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -386,6 +436,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -418,6 +473,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -454,6 +514,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -486,6 +551,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -522,6 +592,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -554,6 +629,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -590,6 +670,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -622,6 +707,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -658,6 +748,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -692,6 +787,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -724,6 +824,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1264,6 +1369,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1296,6 +1406,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
                 }, 
                 {
                  "name":"vaultable",
@@ -1332,6 +1447,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1364,6 +1484,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
                 }, 
                 {
                  "name":"vaultable",
@@ -1400,6 +1525,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1432,6 +1562,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
                 }, 
                 {
                  "name":"vaultable",
@@ -1468,6 +1603,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1500,6 +1640,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1536,6 +1681,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1568,6 +1718,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1604,6 +1759,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1636,6 +1796,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1672,6 +1837,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1704,6 +1874,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1740,6 +1915,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1772,6 +1952,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1808,6 +1993,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1840,6 +2030,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -1876,6 +2071,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1910,6 +2110,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -1942,6 +2147,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2482,6 +2692,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -2514,6 +2729,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2550,6 +2770,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -2582,6 +2807,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2618,6 +2848,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -2650,6 +2885,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2686,6 +2926,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -2718,6 +2963,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2754,6 +3004,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -2786,6 +3041,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2822,6 +3082,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -2854,6 +3119,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2890,6 +3160,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -2922,6 +3197,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -2958,6 +3238,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -2990,6 +3275,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3026,6 +3316,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -3058,6 +3353,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3094,6 +3394,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -3128,6 +3433,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -3160,6 +3470,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3700,6 +4015,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -3732,6 +4052,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3768,6 +4093,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -3800,6 +4130,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3836,6 +4171,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -3868,6 +4208,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3904,6 +4249,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -3936,6 +4286,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -3972,6 +4327,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4004,6 +4364,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4040,6 +4405,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4072,6 +4442,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4108,6 +4483,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4140,6 +4520,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4176,6 +4561,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4208,6 +4598,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4244,6 +4639,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4276,6 +4676,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4312,6 +4717,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4346,6 +4756,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -4378,6 +4793,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4918,6 +5338,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -4950,6 +5375,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -4986,6 +5416,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -5018,6 +5453,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5054,6 +5494,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -5086,6 +5531,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":true
                 }, 
                 {
                  "name":"vaultable",
@@ -5122,6 +5572,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5154,6 +5609,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5190,6 +5650,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5222,6 +5687,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5258,6 +5728,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5290,6 +5765,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5326,6 +5806,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5358,6 +5843,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5394,6 +5884,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5426,6 +5921,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5462,6 +5962,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5494,6 +5999,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -5530,6 +6040,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5564,6 +6079,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -5596,6 +6116,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6136,6 +6661,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6168,6 +6698,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6204,6 +6739,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6236,6 +6776,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6272,6 +6817,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6304,6 +6854,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6340,6 +6895,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6372,6 +6932,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6408,6 +6973,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6440,6 +7010,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6476,6 +7051,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6508,6 +7088,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6544,6 +7129,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6576,6 +7166,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6612,6 +7207,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6644,6 +7244,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6680,6 +7285,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6712,6 +7322,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -6748,6 +7363,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6782,6 +7402,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -6814,6 +7439,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7354,6 +7984,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7386,6 +8021,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7422,6 +8062,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7454,6 +8099,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7490,6 +8140,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7522,6 +8177,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7558,6 +8218,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7590,6 +8255,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7626,6 +8296,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7658,6 +8333,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7694,6 +8374,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7726,6 +8411,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7762,6 +8452,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7794,6 +8489,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7830,6 +8530,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7862,6 +8567,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7898,6 +8608,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -7930,6 +8645,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -7966,6 +8686,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -8000,6 +8725,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -8032,6 +8762,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8572,6 +9307,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -8604,6 +9344,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8640,6 +9385,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -8672,6 +9422,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8708,6 +9463,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -8740,6 +9500,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8776,6 +9541,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -8808,6 +9578,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8844,6 +9619,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -8876,6 +9656,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8912,6 +9697,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -8944,6 +9734,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -8980,6 +9775,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -9012,6 +9812,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9048,6 +9853,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -9080,6 +9890,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9116,6 +9931,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -9148,6 +9968,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9184,6 +10009,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -9218,6 +10048,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -9250,6 +10085,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9790,6 +10630,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -9822,6 +10667,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9858,6 +10708,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -9890,6 +10745,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9926,6 +10786,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -9958,6 +10823,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -9994,6 +10864,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -10026,6 +10901,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -10062,6 +10942,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -10094,6 +10979,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -10130,6 +11020,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -10162,6 +11057,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -10198,6 +11098,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -10230,6 +11135,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -10266,6 +11176,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -10298,6 +11213,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -10334,6 +11254,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":true
@@ -10366,6 +11291,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -10402,6 +11332,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -10436,6 +11371,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -10468,6 +11408,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11008,6 +11953,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11040,6 +11990,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11076,6 +12031,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11108,6 +12068,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11144,6 +12109,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11176,6 +12146,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11212,6 +12187,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11244,6 +12224,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11280,6 +12265,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11312,6 +12302,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11348,6 +12343,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11380,6 +12380,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11416,6 +12421,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11448,6 +12458,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11484,6 +12499,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11516,6 +12536,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11552,6 +12577,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11584,6 +12614,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -11620,6 +12655,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11654,6 +12694,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -11686,6 +12731,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12226,6 +13276,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12258,6 +13313,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12294,6 +13354,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12326,6 +13391,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12362,6 +13432,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12394,6 +13469,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12430,6 +13510,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12462,6 +13547,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12498,6 +13588,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12530,6 +13625,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12566,6 +13666,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12598,6 +13703,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12634,6 +13744,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12666,6 +13781,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12702,6 +13822,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12734,6 +13859,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12770,6 +13900,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12802,6 +13937,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -12838,6 +13978,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12872,6 +14017,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -12904,6 +14054,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13444,6 +14599,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13476,6 +14636,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13512,6 +14677,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13544,6 +14714,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13580,6 +14755,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13612,6 +14792,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13648,6 +14833,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13680,6 +14870,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13716,6 +14911,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13748,6 +14948,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13784,6 +14989,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13816,6 +15026,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13852,6 +15067,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13884,6 +15104,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13920,6 +15145,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -13952,6 +15182,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -13988,6 +15223,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14020,6 +15260,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -14056,6 +15301,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14090,6 +15340,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14122,6 +15377,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -14662,6 +15922,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14694,6 +15959,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -14730,6 +16000,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14762,6 +16037,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -14798,6 +16078,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14830,6 +16115,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -14866,6 +16156,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14898,6 +16193,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -14934,6 +16234,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -14966,6 +16271,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15002,6 +16312,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15034,6 +16349,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15070,6 +16390,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15102,6 +16427,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15138,6 +16468,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15170,6 +16505,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15206,6 +16546,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15238,6 +16583,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15274,6 +16624,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15308,6 +16663,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15340,6 +16700,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15880,6 +17245,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15912,6 +17282,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -15948,6 +17323,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -15980,6 +17360,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16016,6 +17401,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16048,6 +17438,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16084,6 +17479,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16116,6 +17516,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16152,6 +17557,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16184,6 +17594,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16220,6 +17635,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16252,6 +17672,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16288,6 +17713,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16320,6 +17750,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16356,6 +17791,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16388,6 +17828,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16424,6 +17869,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16456,6 +17906,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -16492,6 +17947,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16526,6 +17986,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -16558,6 +18023,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17098,6 +18568,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17130,6 +18605,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17166,6 +18646,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17198,6 +18683,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17234,6 +18724,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17266,6 +18761,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17302,6 +18802,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17334,6 +18839,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17370,6 +18880,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17402,6 +18917,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17438,6 +18958,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17470,6 +18995,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17506,6 +19036,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17538,6 +19073,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17574,6 +19114,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17606,6 +19151,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17642,6 +19192,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17674,6 +19229,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -17710,6 +19270,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17744,6 +19309,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -17776,6 +19346,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18316,6 +19891,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18348,6 +19928,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18384,6 +19969,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18416,6 +20006,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18452,6 +20047,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18484,6 +20084,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18520,6 +20125,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18552,6 +20162,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18588,6 +20203,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18620,6 +20240,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18656,6 +20281,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18688,6 +20318,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18724,6 +20359,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18756,6 +20396,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18792,6 +20437,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18824,6 +20474,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18860,6 +20515,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18892,6 +20552,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -18928,6 +20593,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18962,6 +20632,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -18994,6 +20669,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19534,6 +21214,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19566,6 +21251,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19602,6 +21292,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19634,6 +21329,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19670,6 +21370,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19702,6 +21407,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19738,6 +21448,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19770,6 +21485,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19806,6 +21526,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19838,6 +21563,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19874,6 +21604,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19906,6 +21641,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -19942,6 +21682,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -19974,6 +21719,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20010,6 +21760,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20042,6 +21797,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20078,6 +21838,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20110,6 +21875,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20146,6 +21916,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20180,6 +21955,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20212,6 +21992,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20752,6 +22537,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20784,6 +22574,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20820,6 +22615,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20852,6 +22652,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20888,6 +22693,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20920,6 +22730,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -20956,6 +22771,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -20988,6 +22808,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21024,6 +22849,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21056,6 +22886,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21092,6 +22927,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21124,6 +22964,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21160,6 +23005,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21192,6 +23042,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21228,6 +23083,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21260,6 +23120,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21296,6 +23161,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21328,6 +23198,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21364,6 +23239,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21398,6 +23278,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -21430,6 +23315,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -21970,6 +23860,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22002,6 +23897,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22038,6 +23938,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22070,6 +23975,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22106,6 +24016,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22138,6 +24053,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22174,6 +24094,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22206,6 +24131,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22242,6 +24172,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22274,6 +24209,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22310,6 +24250,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22342,6 +24287,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22378,6 +24328,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22410,6 +24365,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22446,6 +24406,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22478,6 +24443,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22514,6 +24484,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22546,6 +24521,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -22582,6 +24562,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22616,6 +24601,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -22648,6 +24638,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23188,6 +25183,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23220,6 +25220,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23256,6 +25261,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23288,6 +25298,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23324,6 +25339,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23356,6 +25376,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23392,6 +25417,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23424,6 +25454,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23460,6 +25495,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23492,6 +25532,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23528,6 +25573,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23560,6 +25610,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23596,6 +25651,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23628,6 +25688,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23664,6 +25729,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23696,6 +25766,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23732,6 +25807,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23764,6 +25844,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -23800,6 +25885,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23834,6 +25924,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -23866,6 +25961,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24406,6 +26506,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24438,6 +26543,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24474,6 +26584,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24506,6 +26621,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24542,6 +26662,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24574,6 +26699,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24610,6 +26740,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24642,6 +26777,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24678,6 +26818,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24710,6 +26855,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24746,6 +26896,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24778,6 +26933,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24814,6 +26974,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24846,6 +27011,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24882,6 +27052,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24914,6 +27089,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -24950,6 +27130,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -24982,6 +27167,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",
@@ -25018,6 +27208,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -25052,6 +27247,11 @@
                  "value":"obstacle"
                 }, 
                 {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
                  "name":"vaultable",
                  "type":"bool",
                  "value":false
@@ -25084,6 +27284,11 @@
                  "name":"type",
                  "type":"string",
                  "value":"obstacle"
+                }, 
+                {
+                 "name":"usable_inventory",
+                 "type":"bool",
+                 "value":false
                 }, 
                 {
                  "name":"vaultable",

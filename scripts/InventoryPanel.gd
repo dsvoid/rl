@@ -1,21 +1,30 @@
-#FFFFFF  U     U   CCCCC   K     K  !
-#        U     U  C     C  K    K   !
-#FFF     U     U  C        KKKKK    !
-#        U     U  C     C  K    K    
-#         UUUUU    CCCCC   K     K  !
-
 extends Panel
 
 var ItemControl = preload("res://scenes/ItemControl.tscn")
 var entity
 var controls = []
-var equipped_control_indices = {}
+var active_item_control = false
 
 
 func init_display(init_entity):
+	if init_entity == entity:
+		return
+	clear_display()
 	entity = init_entity
-	# actors with equipped items affect the number of inventory items to draw
-	pass
+	for i in entity.inventory:
+		add_item_control(i)
+	if entity.get("hands"):
+		for i in entity.hands:
+			if entity.hands[i]:
+				add_item_control(entity.hands[i],i)
+
+
+func clear_display():
+	if controls.size() > 0:
+		for i in range(controls.size()-1,-1,-1):
+			var control = controls[i]
+			controls.remove(i)
+			controls[i].queue_free()
 
 
 func add_item_control(item_title, equip_location="none"):

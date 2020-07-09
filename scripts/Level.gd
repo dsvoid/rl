@@ -119,6 +119,7 @@ func add_obstacle(location,tile,sprite_rect):
 	obstacle.blocks_light = tile.blocks_light
 	obstacle.blocks_vision = tile.blocks_vision
 	obstacle.emits_light = tile.emits_light
+	obstacle.usable_inventory = tile.usable_inventory
 	obstacle.tile = location
 	obstacle.position = position
 	obstacle.title = tile.title

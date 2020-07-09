@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://themes and styles/theme_rl.tres" type="Theme" id=1]
-[ext_resource path="res://scripts/InventoryPanel.gd" type="Script" id=3]
+[ext_resource path="res://scenes/InventoryPanel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://themes and styles/stylebox_rl.tres" type="StyleBox" id=4]
 
 [node name="MenuPanel" type="Panel"]
@@ -16,12 +16,4 @@ __meta__ = {
 
 [node name="MenuTween" type="Tween" parent="."]
 
-[node name="InventoryPanel" type="Panel" parent="."]
-margin_right = 284.0
-margin_bottom = 348.0
-theme = ExtResource( 1 )
-custom_styles/panel = ExtResource( 4 )
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="InventoryPanel" parent="." instance=ExtResource( 2 )]

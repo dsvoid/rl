@@ -9,9 +9,9 @@ func _ready():
 
 func set_active():
 	color = Color("#666666")
-	Global.input_handler.active_item_control = self
+	get_parent().active_item_control = self
 
 
 func unset_active():
 	color = Color("#000000")
-	Global.input_handler.active_item_control = false
+	get_parent().active_item_control = false
