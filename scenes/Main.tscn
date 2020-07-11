@@ -23,8 +23,8 @@ __meta__ = {
 }
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
-margin_left = 144.0
-margin_right = 492.0
+margin_left = 146.0
+margin_right = 494.0
 margin_bottom = 348.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -55,6 +55,8 @@ __meta__ = {
 }
 
 [node name="MenuPanel" parent="." instance=ExtResource( 5 )]
-margin_right = 940.0
+margin_left = 640.0
 
 [node name="TransferMenu" parent="." instance=ExtResource( 7 )]
+margin_left = 640.0
+margin_right = 932.0

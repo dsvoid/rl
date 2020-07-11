@@ -96,52 +96,51 @@ func process_mouse_tile_input():
 func double_click_action():
 	var player_tile = Global.level.p.tile
 	var level_tile = Global.level.tilev(mouse_tile)
-	# check if double-clicked tile is the player tile
-	# check if double-clicked tile neighbours the player tile
 	if player_tile == mouse_tile:
 		# not sure what to do if you double click yourself
 		return
-	if neighbouring_tiles(player_tile,mouse_tile):
-		var obstacle = level_tile.obstacle
-		if obstacle:
-			if obstacle.usable_inventory:
-				# open obstacle's inventory
-				# assign obstacle's inventory to the loot panel's ItemList
-				# display the loot panel
-				obstacle.inventory_panel = transfer_panel_other
-				transfer_panel_other.init_display(obstacle)
-				get_node("/root/Main").left_viewport()
-				get_node("/root/Main").hide_menu()
-				get_node("/root/Main").show_transfer_menu()
-				pass
-			else:
-				# search the obstacle for an inventory
-				pass
-			return
-		var actor = level_tile.actor
-		if actor:
-			# not really sure what to do here. Attack?
-			return
-		var ground = level_tile.ground
-		if (ground.inventory.keys().size() == 1 &&
-			ground.inventory[ground.inventory.keys()[0]].count == 1):
+	if !neighbouring_tiles(player_tile,mouse_tile):
+		# not sure what should happen if double-clickin a non-neighbour tile
+		return
+	var obstacle = level_tile.obstacle
+	if obstacle:
+		if obstacle.usable_inventory:
+			# open obstacle's inventory
+			# assign obstacle's inventory to the loot panel's ItemList
+			# display the loot panel
+			obstacle.inventory_panel = transfer_panel_other
+			transfer_panel_other.init_display(obstacle)
+			get_node("/root/Main").left_viewport()
+			get_node("/root/Main").hide_menu()
+			get_node("/root/Main").show_transfer_menu()
+			pass
+		else:
+			# search the obstacle for an inventory
+			pass
+		return
+	var actor = level_tile.actor
+	if actor:
+		# not really sure what to do here. Attack?
+		return
+	var ground = level_tile.ground
+	if ground.inventory.keys().size() == 1:
+		if ground.inventory[ground.inventory.keys()[0]].count == 1:
 			var item_title = ground.inventory.keys()[0]
 			Global.level.p.add_item(item_title)
 			ground.remove_item(item_title)
 			return
-		elif (ground.inventory.keys().size() > 1 ||
-			ground.inventory[ground.inventory.keys()[0]].count > 1):
-			# open inventory
-			# assign obstacle's inventory to the loot panel's ItemList
-			# display the loot panel
+		else:
 			ground.inventory_panel = transfer_panel_other
 			transfer_panel_other.init_display(ground)
 			get_node("/root/Main").left_viewport()
 			get_node("/root/Main").hide_menu()
 			get_node("/root/Main").show_transfer_menu()
-			return
-	else:
-		# not sure what to do if double-clicking a tile that isn't neighbouring
+	elif ground.inventory.keys().size() > 1:
+		ground.inventory_panel = transfer_panel_other
+		transfer_panel_other.init_display(ground)
+		get_node("/root/Main").left_viewport()
+		get_node("/root/Main").hide_menu()
+		get_node("/root/Main").show_transfer_menu()
 		return
 
 

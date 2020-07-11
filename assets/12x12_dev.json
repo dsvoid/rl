@@ -27855,7 +27855,7 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"null"
+                 "value":"player"
                 }, 
                 {
                  "name":"type",
@@ -27889,7 +27889,7 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"player"
+                 "value":"null"
                 }, 
                 {
                  "name":"type",
@@ -38310,12 +38310,12 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"null"
+                 "value":"unarmed1"
                 }, 
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38324,12 +38324,12 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"null"
+                 "value":"unarmed2"
                 }, 
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38338,12 +38338,12 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"null"
+                 "value":"unarmed3"
                 }, 
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38352,12 +38352,12 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"null"
+                 "value":"sword"
                 }, 
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38371,7 +38371,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38385,7 +38385,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38399,7 +38399,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38408,12 +38408,12 @@
                 {
                  "name":"title",
                  "type":"string",
-                 "value":"null"
+                 "value":"torch"
                 }, 
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38427,7 +38427,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -38441,7 +38441,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39228,7 +39228,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39242,7 +39242,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39256,7 +39256,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39270,7 +39270,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39284,7 +39284,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39298,7 +39298,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39312,7 +39312,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39326,7 +39326,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39340,7 +39340,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -39354,7 +39354,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40141,7 +40141,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40155,7 +40155,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40169,7 +40169,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40183,7 +40183,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40197,7 +40197,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40211,7 +40211,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40225,7 +40225,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40239,7 +40239,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40253,7 +40253,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -40267,7 +40267,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41054,7 +41054,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41068,7 +41068,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41082,7 +41082,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41096,7 +41096,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41110,7 +41110,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41124,7 +41124,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41138,7 +41138,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41152,7 +41152,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41166,7 +41166,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41180,7 +41180,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41967,7 +41967,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41981,7 +41981,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -41995,7 +41995,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42009,7 +42009,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42023,7 +42023,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42037,7 +42037,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42051,7 +42051,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42065,7 +42065,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42079,7 +42079,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42093,7 +42093,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42880,7 +42880,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42894,7 +42894,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42908,7 +42908,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42922,7 +42922,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42936,7 +42936,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42950,7 +42950,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42964,7 +42964,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42978,7 +42978,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -42992,7 +42992,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43006,7 +43006,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43793,7 +43793,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43807,7 +43807,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43821,7 +43821,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43835,7 +43835,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43849,7 +43849,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43863,7 +43863,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43877,7 +43877,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43891,7 +43891,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43905,7 +43905,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -43919,7 +43919,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44706,7 +44706,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44720,7 +44720,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44734,7 +44734,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44748,7 +44748,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44762,7 +44762,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44776,7 +44776,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44790,7 +44790,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44804,7 +44804,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44818,7 +44818,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -44832,7 +44832,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45619,7 +45619,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45633,7 +45633,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45647,7 +45647,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45661,7 +45661,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45675,7 +45675,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45689,7 +45689,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45703,7 +45703,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45717,7 +45717,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45731,7 +45731,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -45745,7 +45745,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46532,7 +46532,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46546,7 +46546,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46560,7 +46560,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46574,7 +46574,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46588,7 +46588,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46602,7 +46602,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46616,7 +46616,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46630,7 +46630,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46644,7 +46644,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -46658,7 +46658,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47445,7 +47445,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47459,7 +47459,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47473,7 +47473,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47487,7 +47487,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47501,7 +47501,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47515,7 +47515,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47529,7 +47529,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47543,7 +47543,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47557,7 +47557,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {
@@ -47571,7 +47571,7 @@
                 {
                  "name":"type",
                  "type":"string",
-                 "value":"null"
+                 "value":"equip_arms"
                 }]
         }, 
         {

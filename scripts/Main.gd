@@ -10,6 +10,7 @@ var transfer_menu
 var transfer_menu_tween
 var base_transfer_menu_position
 
+
 func _ready():
 	vpc = $ViewportContainer
 	vpc_tween = $ViewportContainer/ViewportTween
@@ -47,12 +48,14 @@ func center_viewport():
 	)
 	vpc_tween.start()
 
+
 func left_viewport():
 	vpc_tween.interpolate_property(
 		vpc, "rect_position", vpc.rect_position, Vector2(0,0),
 		Global.TWEEN_DURATION, Tween.TRANS_QUAD, Tween.EASE_OUT
 	)
 	vpc_tween.start()
+
 
 func show_menu():
 	menu_tween.interpolate_property(
@@ -84,3 +87,7 @@ func hide_transfer_menu():
 		Global.TWEEN_DURATION, Tween.TRANS_QUAD, Tween.EASE_OUT
 	)
 	transfer_menu_tween.start()
+
+
+func is_transfer_menu_open():
+	return transfer_menu.rect_position != base_transfer_menu_position

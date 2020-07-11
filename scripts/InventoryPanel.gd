@@ -48,9 +48,12 @@ func add_item_control(item_title, equip_location="none"):
 		new_control.get_node("ItemLabel").text = item_title
 	else:
 		update_item_control_count(new_control)
-	new_control.rect_position.y = index * Global.TILE_HEIGHT
+	# TODO: fix whatever forces me to reduce the rect_position.y by TILE_HEIGHT
+	new_control.rect_position.y = (index * Global.TILE_HEIGHT) - Global.TILE_HEIGHT + 1
+	new_control.rect_position.x = 1
 	for i in range(index, controls.size()):
 		controls[i].rect_position.y += Global.TILE_HEIGHT
+
 
 func remove_item_control(item_title,equip_location="none"):
 	var index = controls.bsearch_custom(item_title,self,"ip_bsearch")

@@ -14,6 +14,7 @@ var tileset_columns
 var lights = []
 var new_light_id = 0
 var items = {}
+var equip_arms = {}
 
 func _ready():
 	Global.level = self
@@ -87,6 +88,8 @@ func load_tileset(tileset_path):
 			var value = tile["properties"][j]["value"]
 			data[key] = value
 		tileset.append(data)
+		if data.type == "equip_arms":
+			register_equip_arm(i,data.title)
 
 
 func tile(x,y):
@@ -167,8 +170,14 @@ func add_item(location,tile,index):
 		item.sprite_index = index
 		item.title = tile.title
 		items[tile.title] = item
-		$Items.add_child(item)
 	tiles[location.x][location.y].ground.add_item(tile.title)
+
+
+# function adds list of callable equippable arms
+func register_equip_arm(index,title):
+	var offset_x = (index % tileset_columns) * Global.TILE_WIDTH
+	var offset_y = (index / tileset_columns) * Global.TILE_HEIGHT
+	equip_arms[title] = Rect2(offset_x,offset_y,Global.TILE_WIDTH,Global.TILE_HEIGHT)
 
 
 class Tile:

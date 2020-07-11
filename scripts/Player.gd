@@ -62,6 +62,9 @@ func _process(delta):
 		var target = Vector2(tile.x+direction.x, tile.y+direction.y)
 		var new_tile = Global.level.tilev(target)
 		if !movement_collision(new_tile):
+			# close transfer menu if it's still open
+			if get_node("/root/Main").is_transfer_menu_open():
+				get_node("/root/Main").hide_transfer_menu()
 			var old_tile = Global.level.tilev(tile)
 			# apply an alpha tween on sprites the player moves between
 			old_tile.ground.fade(1)
