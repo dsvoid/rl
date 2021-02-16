@@ -64,13 +64,14 @@ config/icon="res://icon.png"
 
 Global="*res://scripts/Global.gd"
 InputHandler="*res://scripts/InputHandler.gd"
+ActionQueue="*res://scripts/ActionQueue.gd"
 
 [display]
 
-window/size/width=640
+window/size/width=360
 window/size/height=360
 window/size/resizable=false
-window/size/test_width=1280
+window/size/test_width=720
 window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
@@ -120,6 +121,11 @@ right_click={
 drop_inventory_item={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ready_attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777238,"unicode":0,"echo":false,"script":null)
  ]
 }
 

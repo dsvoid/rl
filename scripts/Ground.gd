@@ -8,27 +8,20 @@ class_name Ground
 var render_sprite
 # stores the original sprite position for the ground texture
 var ground_rect = Rect2(0,0,0,0)
+var has_corpse = false
 
 
 func _ready():
 	render_sprite = $Sprite
 
 
-func add_item(item_title,count=1):
-	.add_item(item_title,count)
-	# TODO: item prioritization on visibility.
-	var item = Global.level.items[item_title]
-	var sprite_index = item.sprite_index
+func add_corpse(sprite_index):
 	var tileset_columns = Global.level.tileset_columns
 	var offset_x = (sprite_index % tileset_columns) * Global.TILE_WIDTH
 	var offset_y = (sprite_index / tileset_columns) * Global.TILE_HEIGHT
 	$Sprite.region_rect = Rect2(
 		offset_x, offset_y, Global.TILE_WIDTH, Global.TILE_HEIGHT
 	)
-
-
-func remove_item(item,count=1):
-	var i = .remove_item(item,count)
-	if inventory.keys().size() == 0:
-		$Sprite.region_rect = ground_rect
-	return i
+	$Sprite.rotation_degrees = 90
+	$Sprite.position.x += Global.TILE_WIDTH
+	has_corpse = true

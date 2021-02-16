@@ -50,10 +50,10 @@ func load_level(map_path):
 		var location = Vector2(x,y)
 		var position = Vector2(x*Global.TILE_WIDTH, y*Global.TILE_HEIGHT)
 		var ground = Ground.instance()
+		ground.title = "ground"
 		tiles[x][y].ground = ground
 		ground.position = position
 		ground.tile = location
-		ground.usable_inventory = true
 		add_child(ground)
 		if map_tiles[i] != 0:
 			var index = int(map_tiles[i]-1)
@@ -66,13 +66,12 @@ func load_level(map_path):
 			if tile.type == "ground":
 				ground.ground_rect = sprite_rect
 				ground.render_sprite.region_rect = ground.ground_rect
+				ground.title = tile.title
 			if tile.type == "obstacle":
-				add_obstacle(location,tile,sprite_rect)
+				var obstacle = add_obstacle(location,tile,sprite_rect)
 			if tile.type == "actor":
-				add_actor(location,tile,sprite_rect)
-			if tile.type == "item":
-				add_item(location,tile,index)
-	$Renderer.init_mouse_highlight() #TODO: move somewhere nicer
+				var actor = add_actor(location,tile,sprite_rect)
+				actor.sprite_index = index
 
 func load_tileset(tileset_path):
 	var f = File.new()
@@ -122,7 +121,6 @@ func add_obstacle(location,tile,sprite_rect):
 	obstacle.blocks_light = tile.blocks_light
 	obstacle.blocks_vision = tile.blocks_vision
 	obstacle.emits_light = tile.emits_light
-	obstacle.usable_inventory = tile.usable_inventory
 	obstacle.tile = location
 	obstacle.position = position
 	obstacle.title = tile.title
@@ -132,7 +130,7 @@ func add_obstacle(location,tile,sprite_rect):
 	if obstacle.emits_light:
 		obstacle.set_light()
 		lights.append(obstacle)
-
+	return obstacle
 
 func add_actor(location,tile,sprite_rect):
 	var position = Vector2(
@@ -146,18 +144,14 @@ func add_actor(location,tile,sprite_rect):
 	else:
 		actor = Actor.instance()
 	tiles[location.x][location.y].actor = actor
-	actor.emits_light = tile.emits_light
-	actor.humanoid = tile.humanoid # TODO: make this a subclass of actor
-	actor.one_handed = tile.one_handed
 	actor.position = position
 	actor.tile = location
-	actor.title = tile.title
-	actor.wide = tile.wide
 	actor.get_node("Sprite").region_rect = sprite_rect
 	add_child(actor)
 	if actor.emits_light:
 		actor.set_light()
 		lights.append(actor)
+	return actor
 
 
 # function assumes all placed items have distinct names
@@ -170,7 +164,6 @@ func add_item(location,tile,index):
 		item.sprite_index = index
 		item.title = tile.title
 		items[tile.title] = item
-	tiles[location.x][location.y].ground.add_item(tile.title)
 
 
 # function adds list of callable equippable arms
